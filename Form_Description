@@ -1,0 +1,135 @@
+| Tag                     | Purpose               |
+| ----------------------- | --------------------- |
+| input type="text"       | Text input            |
+| input type="email"      | Email with validation |
+| input type="password"   | Hidden text           |
+| input type="radio"      | Single choice         |
+| input type="checkbox"   | Multiple choices      |
+| input type="date"       | Date picker           |
+
+
+
+<form action="" method="">
+
+    <fieldset>
+        <legend></legend>
+
+        <label for=""></label>
+        <input type="" name="" id="">
+
+        <label for=""></label>
+        <input type="" name="" id="">
+
+        <input type="radio" name="">
+        <input type="radio" name="">
+
+        <input type="checkbox" name="">
+        <input type="checkbox" name="">
+
+        <select name="" id="">
+            <option value=""></option>
+        </select>
+
+        <textarea name="" id=""></textarea>
+
+        <input type="submit">
+        <input type="reset">
+
+    </fieldset>
+
+</form>
+
+
+-> <fieldset> → Groups related form elements together
+
+-> <legend> → Gives a title to the fieldset
+
+-> <form> → Container for all input elements
+    action → where data is sent
+    method → GET or POST
+
+-> <label> → Describes the input field
+
+-> for="fname" → Connects label with input
+
+-> type="text" → Allows text input , and like wise for email , password , radio , checkbox , date , number
+
+-> id="fname" → Unique identifier
+
+-> pattern="[0-9]{10}" → Regular Expression validation
+
+-> <textarea> → Multi-line text input
+
+-> type="radio" → Select only one option
+
+-> type="checkbox" → Select multiple options
+
+-> For gender :
+    <input type="radio" name="gender" id="male" checked> Male
+    <input type="radio" name="gender" id="female"> Female
+    type="radio" → Select only one option
+    Same name="gender" groups them together
+    checked → Male selected by default
+
+-> <select> → Drop-down list
+   <option> → Items in the list , value is the attribute used to give the value in the list
+   -> "disabled"" option prevents selecting
+   -> "selected" option is defaultly selected
+
+-> "required" :- need to fill or select the field compulsorily
+   
+-> button
+| Type   | Action      |
+| ------ | ----------- |
+| submit | Sends data  |
+| reset  | Clears form |
+ <!-- Buttons -->
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+
+
+➡️ The server understands data ONLY by name, not by id.
+    <form>
+    <input type="text" id="username">
+    <input type="submit">
+    </form>
+
+    What happens?
+        You type something
+        Click Submit
+        ❌ Nothing is sent to server
+        Because → no name attribute
+
+With name ✔️
+<form>
+    <input type="text" id="username" name="username">
+    <input type="submit">
+</form>
+
+✔️ Server receives the value correctly
+
+| Attribute | Used for                            |
+| --------- | ----------------------------------- |
+| `id`      | Label linking, CSS, JavaScript      |
+| `name`    | Sending data to server              |
+| Unique?   | `id` must be unique                 |
+| Reusable? | `name` can repeat (radio, checkbox) |
+
+-> Why SAME name in Radio Buttons?
+<input type="radio" name="gender" value="Male">
+<input type="radio" name="gender" value="Female">
+
+Why?
+Same name → browser allows only one selection
+Data sent:
+gender=Male
+
+-> EXAM ANSWER (2–3 lines)
+
+The name attribute is used to identify form data when the form is submitted.
+Data is sent to the server as name–value pairs.
+Without the name attribute, input data is not submitted.
+
+Final Rule (Remember this)
+
+❗ No name → No data submission
