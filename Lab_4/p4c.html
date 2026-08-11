@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM 4</title>
+</head>
+<body>
+    <fieldset>
+        <legend  align="center">CREATE ACCOUNT</legend>
+        <form style="color: rgb(51, 168, 168); border: 30px solid rgb(87, 87, 210);">
+        <table align="center" cellpadding="8">
+            <hr>
+                
+
+            <tr>
+                <td><label for="First Name">First Name*</label></td>
+                <td><label for="Last Name">Last Name</label></td>
+            </tr>
+
+            <tr>
+                <td><input type="text" placeholder="Enter your first name"id="First Name" required ></td>
+                <td><input type="text" placeholder="Enter your last name" id="Last Name"required ></td>
+            </tr>
+
+            <tr>
+                <td colspan="2"><label for="Email">Email*</label></td>
+            </tr>
+
+            <tr>
+                <td colspan="2"><input type="email" size="45" placeholder="Enter your email" id="Email"></td>
+            </tr>
+
+            <tr>
+                <td><label for="Password">Password*</label></td>
+                <td><label for="Confirm Password">Confirm Password*</label></td>
+            </tr>
+
+            <tr>
+                <td><input type="password" placeholder="Enter your password" id="Password"></td>
+                <td><input type="password" placeholder="Enter your password again" id="Confirm Password"></td>
+            </tr>
+
+            <tr>
+                <td><label>Gender:</label></td>
+                <td><label>Hobbies</label></td>
+            </tr>
+
+            <tr>
+                <td><input type="radio" name="gender" checked id="male"><label for="male">Male  </label>
+                    <input type="radio" name="gender" id="female"><label for="female">Female </label> </td>
+                <td>
+                    <input type="checkbox" name="hobbies" id="Music"> <label for="Music">Music</label>
+                    <input type="checkbox" name="hobbies" id="Sports"> <label for="Sports">Sports</label>
+                    <input type="checkbox" name="hobbies" id="Travel"> <label for="Travel">Travel</label>
+                    <input type="checkbox" name="hobbies" id="Movies"> <label for="Movies">Movies</label>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="Source of Income">Source of Income</label></td>
+                <td><label for="Income">Income</label></td>
+            </tr>
+
+            <tr>
+                <td><input type="number" placeholder="employed" id="Source of Income"></td>
+                <td><input type="range" min="0" max="20000" id="Income">20k</td>
+            </tr>
+
+            <tr>
+                <td><label for="Upload profile picture">Upload profile picture</label></td>
+                <td><label for="Age">Age</label></td>
+            </tr>
+
+            <tr>
+                <td><input type="file" id="Upload profile picture"></td>
+                <td><input type="number" id="Age"></td>
+            </tr>
+
+            <tr>
+                <td ><label for="Bio">Bio</label></td>
+            </tr>
+
+            <tr>
+                <td colspan="2" >
+                    <textarea rows="10" cols="30" id="Bio" ></textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <td align="right" colspan="2"><button type="CREATE" style="background-color: rgb(20, 129, 129); color: white;">CREATE</button></td>
+                
+            </tr>
+        </table>
+       </form>
+   
+    </fieldset>
+</body>
+</html>

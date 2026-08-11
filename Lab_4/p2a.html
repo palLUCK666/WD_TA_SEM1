@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM2</title>
+</head>
+<body>
+    <fieldset>
+        <legend align="center">COVID-19 VACCINE REGISTRATION FORM</legend>
+    <form align="center">
+        <table align="center" cellpadding="8">
+
+            <tr align="left">
+                <td><label for="fname">First Name</label></td>
+                <td><input type="text" name="fname" id="fname"></td>
+            </tr>
+
+            <tr align="left">
+                
+                <td><label for="lname">Last Name</label></td>
+                <td><input type="text" name="lname" id="lname"></td>
+            </tr>
+
+            <tr align="left">
+                <td><label for="Aadhar Number">Aadhar Number</label></td>
+                <td><input type="text" pattern="[0-9]{12}" id="Aadhar Number"></td>
+            </tr>
+
+            <tr align="left">
+                <td><label for="Vaccine Name">Vaccine Name</label></td>
+                <td>
+                   
+                    <select name="Vaccince Name" id="Vaccine Name" >Vaccine Name
+                    <option value="" selected disabled>Please select Vaccine Name</option>
+                    <option value="Covishield">Covishield</option>
+                    <option value="Covaxin">Covaxin</option>
+                </select>
+                </td>
+            </tr>
+
+            <tr align="left">
+                <td><label for="Vaccination Center Name">Vaccination Center Name</label></td>
+                <td>
+                    <select name="Center" id="Vaccination Center Name">Vaccination Center Name
+                    <option value="" selected disabled>Please select Vaccination Center Name</option>
+                    <option value="ABC hospital">ABC hospital</option>
+                    <option value="DEF clinic">DEF clinic</option>
+                    <option value="GHI hospital">GHI hospital</option>
+                    <option value="JKL clinic">JKL clinic</option>
+                    <option value="MNO hospital">MNO hospital</option>
+                </select>
+                </td>
+            </tr>
+
+            <tr align="left">
+                <td><label for="Date of Dose">Date of Dose</label></td>
+                <td><input type="date" id="Date of Dose"></td>
+            </tr>
+
+            <tr align="left">
+                <td><label for="Dose Number">Dose Number</label></td>
+                <td><input type="number" id="Dose Number"></td>
+            </tr>
+
+            <tr align="left">
+                <td><button type="CLICK HERE">CLICK HERE</button></td>
+                <td><button type="CANCEL">CANCEL</button></td>
+            </tr>
+        </table>
+    </form>
+</fieldset>
+</body>
+</html>

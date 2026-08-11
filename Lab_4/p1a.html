@@ -1,0 +1,109 @@
+m
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form-1</title>
+</head>
+<body>
+    <fieldset>
+        <legend align="center">FORM</legend>
+    <form align="center">
+        <table align="center" cellspacing="10px">
+           <b> <thead valign="center">Student Registration</thead> </b>
+
+        <tr>
+            <td> <label for="fname">Full Name</label></td>
+            <td> <input type="text" id="fname"></td>
+        </tr>
+
+        <tr>
+            <td> <label for="email">Email</label></td>
+            <td> <input type="text" id="email"></td>
+        </tr>
+
+        <tr>
+            <td> <label for="mob">Mobile No</label> </td>
+            <td><input type="text" id="mob"pattern="[0-9]{10}"></td>
+        </tr>
+
+        <tr>
+            <td> <label for="add">Address:</label> </td>
+            <td ><textarea name="add" id="add"></textarea></td>   
+        </tr>
+
+        <tr>
+            <td> <label for="Nationality">Nationality</label> </td>
+            <td><input type="text" id="Nationality" name="nationaity"></td>
+        </tr>
+
+        <tr>
+            <td> <label for="date">date</label> </td>
+            <td ><input type="date" id="date"></td>
+        </tr>
+
+        <tr>
+            <td> <label> Gender</label>
+
+            </td>
+            <td>
+                <input type="radio" name="gender" id="male"  checked> <label for="male"></label> Male
+                <input type="radio" name="gender" id="female"> <label for="female">Female
+
+            </td>
+        </tr>
+
+        
+        <tr>
+            <td> <label for="Highest Degree">Highest Degree</label></td>
+            <td>
+               
+                <select name="Highest Degree" id="Highest Degree">
+                    <option value="" disabled selected>Select Degree</option>
+                    <option value="Btech CSE"> Btech CSE</option>
+                    <option value="Mtech CSE">Mtech CSE</option>
+                    <option value="BCA">BCA</option>
+                    <option value="MCA">MCA</option>
+
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td><label for="CPI">CPI</label></td>
+            <td><input type="text" id="CPI"></td>
+        </tr>
+
+        <tr>
+            <td><label for="University">University</label></td>
+            <td><input type="text" name="uni" id="University"></td>
+        </tr>
+
+        <tr>
+            <td><label for="Passing year">Passing year</label></td>
+            <td>
+                <select name="Select your passing year" id="Passing year">
+                    <option value="" selected disabled>Select your passing year</option>
+                    <option value="2023" disabled >2023</option>
+                    <option value="2024">2024</option>
+                    <option value="2025">2025</option>
+                    <option value="2026">2026</option>
+                    <option value="2027">2027</option>
+                    <option value="2028">2028</option>
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            
+            <td align="right"><button type="submit">Submit</button></td>
+            <td align="left"><button type="reset">Cancel</button></td>
+            
+        </tr>
+
+        </table>
+    </form>
+</fieldset>
+</body>
+</html>

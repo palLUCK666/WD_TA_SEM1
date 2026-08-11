@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM-3</title>
+</head>
+<body>
+
+<fieldset>
+    <legend align="center">EMPLOYEE REGISTRATION</legend>
+
+    <form>
+        <table align="center" cellpadding="8" cellspacing="0" border="0">
+
+            <!-- Personal Information Header -->
+            <tr align="center">
+                <th colspan="6">Personal Information</th>
+            </tr>
+
+            <tr align="left">
+                <td><label for="empid">Employee Id</label></td>
+                <td>:</td>
+                <td><input type="text" placeholder="Enter Employee Id" id="empid" required></td>
+
+                <td><label for="empname">Employee Name</label></td>
+                <td>:</td>
+                <td><input type="text" placeholder="Enter Employee Name" id="empname" required></td>
+            </tr>
+
+            <tr align="left">
+                <td><label for="email">Email</label></td>
+                <td>:</td>
+                <td><input type="email" placeholder="Enter Email" id="email" required></td>
+
+                <td><label for="contact">Contact Number</label></td>
+                <td>:</td>
+                <td><input type="text" pattern="[0-9]{10}" placeholder="Enter Contact No" id="contact" required></td>
+            </tr>
+
+            <tr align="left">
+                <td><label>Marital Status</label></td>
+                <td>:</td>
+                <td colspan="4">
+                    <input type="radio" name="marital" id="single" checked>
+                    <label for="single">Single</label>
+
+                    <input type="radio" name="marital" id="married">
+                    <label for="married">Married</label>
+                </td>
+            </tr>
+
+            <!-- Education Information Header -->
+            <tr align="center">
+                <th colspan="6">Education Information</th>
+            </tr>
+
+            <tr align="left">
+                <td><label for="education">Education</label></td>
+                <td>:</td>
+                <td><input type="text" placeholder="Enter Education Details" id="education" required></td>
+
+                <td><label for="experience">Experience</label></td>
+                <td>:</td>
+                <td><input type="text" placeholder="Enter Experience Details" id="experience" required></td>
+            </tr>
+
+            <!-- Job Details Header -->
+            <tr align="center">
+                <th colspan="6">Job Details</th>
+            </tr>
+
+            <tr align="left">
+                <td><label for="designation">Designation</label></td>
+                <td>:</td>
+                <td><input type="text" placeholder="Enter designation details" id="designation" required></td>
+
+                <td><label for="joblocation">Job Location</label></td>
+                <td>:</td>
+                <td><input type="text" placeholder="Enter job location" id="joblocation" required></td>
+            </tr>
+
+            <tr align="left">
+                <td><label for="salary">Salary</label></td>
+                <td>:</td>
+                <td><input type="text" placeholder="Enter salary details" id="salary" required></td>
+                <td></td><td></td><td></td>
+            </tr>
+
+            <tr>
+                <td colspan="6"><hr></td>
+            </tr>
+
+            <tr align="center">
+                <td colspan="6">
+                    <button type="submit">REGISTER</button>
+                </td>
+            </tr>
+
+        </table>
+    </form>
+</fieldset>
+
+</body>
+</html>
