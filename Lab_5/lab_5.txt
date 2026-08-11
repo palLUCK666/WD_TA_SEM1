@@ -1,0 +1,12 @@
+| Feature             | Tags/Attributes Used                                                |
+| ------------------- | ------------------------------------------------------------------- |
+| Semantic Structure  | `<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<footer>` |
+| Form Elements       | `<input>`, `<textarea>`                                             |
+| Required Validation | `required`                                                          |
+| Email Validation    | `type="email"`                                                      |
+| Number Validation   | `type="number"`, `min`, `max`                                       |
+| Pattern Validation  | `pattern`                                                           |
+| Length Validation   | `minlength`, `maxlength`                                            |
+| Audio               | `<audio>`                                                           |
+| Video               | `<video>`                                                           |
+| Multimedia Controls | `controls`, `autoplay`, `loop`, `poster`                            |

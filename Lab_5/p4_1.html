@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+</head>
+<body>
+
+<h2>Registration Form</h2>
+
+<form>
+
+    Email:
+    <input type="email" required><br><br>
+
+    Age:
+    <input type="number" min="18" max="60" required><br><br>
+
+    Password:
+    <input type="password"
+           pattern="(?=.*[A-Z])(?=.*[0-9]).{8,}"
+           title="Must contain at least 8 characters, one uppercase letter and one number"
+           required><br><br>
+
+    <input type="submit" value="Register">
+
+</form>
+
+</body>
+</html>
