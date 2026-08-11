@@ -1,0 +1,71 @@
+📌 Explanation of each meta tag
+✔ 1. <meta name="description" ...>
+
+Purpose: Gives a short summary of your webpage.
+
+Search engines like Google display this text under the website title.
+
+Example in Google search results:
+
+My Webpage Title
+This is a sample webpage demonstrating basic meta tags.
+
+
+📌 Used by: Search engines (Google, Bing)
+
+📌 Not shown on your page
+
+✔ 2. <meta name="keywords" content="">
+
+Purpose: Defines words related to your webpage.
+Example keywords: HTML, meta tags, description
+
+Search engines use it slightly for indexing.
+
+📌 Not visible to users
+📌 Placed only inside <head>
+
+✔ 3. <meta name="author" ...>
+
+Purpose: Defines the creator of the webpage.
+
+Used by documentation tools and some browsers.
+
+📌 Not displayed on the webpage
+📌 Helpful for developers maintaining the site
+
+✔ 4. <meta name="viewport" ...>
+
+Purpose: Makes your website responsive on mobile devices.
+
+Without this tag → website appears zoomed-out or tiny on phones.
+
+This tag tells the browser:
+
+Width = match the device screen
+
+Zoom level = 1.0
+
+📌 Very important in modern web design
+📌 Not visible to users
+
+🟦 Summary 
+
+Meta tags are written inside the <head> section of an HTML document.
+They do not appear on the webpage, but provide important information to:
+
+Web browsers
+
+Search engines (Google)
+
+Mobile devices
+
+They help in:
+
+SEO (search engine optimization)
+
+Making pages responsive
+
+Identifying the author
+
+Giving description and keywords

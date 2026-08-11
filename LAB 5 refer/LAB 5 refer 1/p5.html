@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+Create a webpage that demonstrates the use of <embed>, <object>, and <iframe> tags
+     to display external multimedia content like PDFs, YouTube videos, and 
+     interactive maps.-->
+<head>
+    <meta charset="UTF-8">
+    <title>Embed, Object and Iframe Demo</title>
+</head>
+
+<body>
+
+<h1>HTML Multimedia Embedding Demo</h1>
+
+<!-- ========================= -->
+<!-- EMBED TAG -->
+<!-- ========================= -->
+<h2>1. Using &lt;embed&gt; Tag (PDF)</h2>
+
+<embed src="sample.pdf"
+       type="application/pdf"
+       width="600"
+       height="400">
+
+<p>
+The &lt;embed&gt; tag is used to embed external multimedia content like PDFs directly into a webpage.
+</p>
+
+<hr>
+
+<!-- ========================= -->
+<!-- OBJECT TAG -->
+<!-- ========================= -->
+<h2>2. Using &lt;object&gt; Tag (PDF)</h2>
+
+<object data="sampleerkjehj.pdf"
+        type="application/pdf"
+        width="600"
+        height="400">
+    <p>
+        PDF cannot be displayed. 
+        <a href="sample.pdf">Download PDF</a>
+    </p>
+</object>
+
+<p>
+The &lt;object&gt; tag provides fallback content if the browser cannot display the file.
+</p>
+
+<hr>
+
+<!-- ========================= -->
+<!-- IFRAME TAG (YouTube) -->
+<!-- ========================= -->
+<h2>3. Using &lt;iframe&gt; Tag (YouTube Video)</h2>
+
+<iframe
+    width="600"
+    height="350"
+    src="https://www.youtube.com/embed/z-H8vkIFptc"
+    title="YouTube video"
+    frameborder="0"
+    allowfullscreen>
+</iframe>
+
+<iframe
+    width="600"
+    height="350"
+    src="https://www.darshan.ac.in"
+    title="YouTube video"
+    frameborder="0"
+    allowfullscreen>
+</iframe>
+
+
+<p>
+The &lt;iframe&gt; tag is used to embed another webpage such as a YouTube video.
+</p>
+
+<hr>
+
+<!-- ========================= -->
+<!-- IFRAME TAG (Google Maps) -->
+<!-- ========================= -->
+<h2>4. Using &lt;iframe&gt; Tag (Google Map)</h2>
+
+<iframe
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241316.70176591733!2d72.71412916451202!3d19.082482212380583!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c6306644edc1%3A0x5da4ed8f8d648c69!2sMumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1765740780287!5m2!1sen!2sin" 
+    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</iframe>
+
+
+<p>
+The &lt;iframe&gt; tag can also embed interactive maps from Google Maps.
+</p>
+
+</body>
+</html>

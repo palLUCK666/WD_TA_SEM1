@@ -1,0 +1,83 @@
+❌ Why this YouTube link does NOT work in <iframe>
+
+Your link:
+
+https://youtu.be/z-H8vkIFptc?si=V4M5PTDHWTlpUV3K
+
+
+This is a share link, not an embed link.
+
+👉 <iframe> cannot play normal or shortened YouTube URLs.
+____________________________________________________________________________________________________________
+
+✅ CORRECT WAY to USE YouTube in <iframe>
+🔹 Step 1: Extract the video ID
+
+From your link:
+
+z-H8vkIFptc (after / and before ?)
+
+🔹 Step 2: Convert to EMBED URL format
+
+✅ Correct embed format
+
+https://www.youtube.com/embed/VIDEO_ID
+
+
+So your final link becomes:
+
+https://www.youtube.com/embed/z-H8vkIFptc
+
+✅ WORKING <iframe> CODE (USE THIS)
+<iframe
+    width="600"
+    height="350"
+    src="https://www.youtube.com/embed/z-H8vkIFptc"
+    title="YouTube video"
+    frameborder="0"
+    allowfullscreen>
+</iframe>
+
+
+✔️ This WILL work in all browsers.
+
+
+🧠 ONE-LINE VIVA ANSWER (VERY IMPORTANT)
+
+YouTube videos must be embedded using the /embed/VIDEO_ID URL format, not the normal or shortened video link.
+
+____________________________________________________________________________________________________________
+
+📌 OPTIONAL (Autoplay, Mute, etc.)
+<iframe
+    width="600"
+    height="350"
+    src="https://www.youtube.com/embed/z-H8vkIFptc?autoplay=1&mute=1"
+    allowfullscreen>
+</iframe>
+
+____________________________________________________________________________________________________________
+____________________________________________________________________________________________________________
+
+✅ CORRECT WAY to EMBED GOOGLE MAPS
+
+You must use the Google Maps EMBED link, not the share link.
+
+🔹 METHOD 1 (BEST & EXAM-SAFE)
+Step 1: Open Google Maps in browser
+
+Search your location.
+
+Step 2: Click Share → Embed a map
+
+____________________________________________________________________________________________________________
+
+
+🧠 ONE-LINE VIVA ANSWER (VERY IMPORTANT)
+
+Google Maps must be embedded using the maps/embed URL provided by Google, not the shared or shortened map link.
+
+📌 QUICK COMPARISON (REMEMBER THIS)
+Purpose	Link Type
+Open in browser/app	maps.app.goo.gl
+Embed in webpage	www.google.com/maps/embed

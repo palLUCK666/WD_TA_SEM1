@@ -1,0 +1,107 @@
+🔹 What are HTML5 Semantic Tags?
+
+HTML5 semantic tags are meaningful elements that clearly describe the purpose of the content inside them.
+They help both browsers and developers understand the structure of a webpage.
+___________________________________________________________________________________________________________
+
+1️⃣ <header>
+
+Used to define the top section of a webpage.
+
+Usually contains the website title, logo, or heading.
+
+In this program, <header> displays the website name.
+
+📌 Example:
+
+<header>
+    <h1>My Website</h1>
+</header>
+
+___________________________________________________________________________________________________________
+
+2️⃣ <nav>
+
+Used to define the navigation section.
+
+Contains links like Home, About, Contact.
+
+Helps search engines understand navigation menus.
+
+📌 Example:
+
+<nav>
+    <a href="#">Home</a> |
+    <a href="#">About</a> |
+    <a href="#">Contact</a>
+</nav>
+
+____________________________________________________________________________________________________________
+
+3️⃣ <main>
+
+Represents the main content area of the webpage.
+
+There should be only one <main> tag per page.
+
+Excludes header, footer, and navigation content.
+
+📌 Example:
+
+<main>
+    ...
+</main>
+
+___________________________________________________________________________________________________________
+
+4️⃣ <section>
+
+Used to divide content into logical sections.
+
+Each section usually has a heading.
+
+Improves readability and structure.
+
+📌 Example:
+
+<section>
+    <h2>Introduction</h2>
+</section>
+
+____________________________________________________________________________________________________________
+
+5️⃣ <article>
+
+Represents independent content that can stand alone.
+
+Examples: blog post, news article, comment.
+
+In this program, it contains the main paragraph text.
+
+📌 Example:
+
+<article>
+    <p>This page demonstrates HTML5 semantic tags.</p>
+</article>
+
+____________________________________________________________________________________________________________
+
+6️⃣ <footer>
+
+Defines the bottom section of the webpage.
+
+Usually contains copyright information, author details, or links.
+
+📌 Example:
+
+<footer>
+    <p>© 2025 My Website</p>
+</footer>
+
+____________________________________________________________________________________________________________
+
+🔹 One-Line Viva Answer
+
+HTML5 semantic tags give meaning to webpage structure and improve accessibility, SEO, and code clarity.
+
+____________________________________________________________________________________________________________

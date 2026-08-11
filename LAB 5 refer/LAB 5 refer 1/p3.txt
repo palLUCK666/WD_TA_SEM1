@@ -1,0 +1,53 @@
+why there is a need to use audio then source and src and not directly audio src?
+
+1️⃣ Using <audio src="..."> (simple way)
+
+You can do this:
+<audio src="song.mp3" controls autoplay loop></audio>
+
+This works fine when:
+You have only one audio file
+You are sure the format (MP3) is supported by the browser
+
+2️⃣ Using <audio> with <source> (recommended way)
+<audio controls autoplay loop>
+    <source src="song.mp3" type="audio/mpeg">
+    <source src="song.ogg" type="audio/ogg">
+</audio>
+
+This method is used because:
+
+✅ 1. Multiple format support (main reason)
+
+Different browsers support different formats:
+| Format | Browser support |
+| ------ | --------------- |
+| MP3    | Most browsers   |
+| OGG    | Firefox, others |
+| WAV    | Limited         |
+The browser automatically picks the first format it supports.
+
+✅ 2. Better compatibility
+
+If MP3 fails, it tries OGG:
+Try MP3 → if not supported → try OGG → else show message
+
+✅ 3. Cleaner fallback handling
+
+You can show a message:
+Your browser does not support the audio element.
+
+
+
+| Method                    | When to use                            |
+| ------------------------- | -------------------------------------- |
+| `<audio src="">`          | One file, simple project               |
+| `<audio><source></audio>` | Real projects, multi-browser support ✅|
+
+
+
+✔ Best Practice
+Always use:
+<audio controls>
+   <source src="file.mp3" type="audio/mpeg">
+</audio>

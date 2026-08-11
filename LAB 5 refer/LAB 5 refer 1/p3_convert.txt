@@ -1,0 +1,48 @@
+You can convert MP3 → OGG easily using any of these methods 👇
+
+✅ Method 1: Online Converter (Easiest)
+Best sites:
+
+https://cloudconvert.com
+
+https://convertio.co
+
+https://online-audio-converter.com
+
+Steps:
+Open any site
+Upload your .mp3 file
+Choose output format → OGG
+Click Convert
+Download the .ogg file
+⏱ Takes 1–2 minutes.
+
+--------------------------------------------------------------------------------
+
+✅ Method 2: Using VLC Media Player (Offline)
+
+If you already have VLC, do this:
+
+Steps:
+Open VLC
+Click Media → Convert / Save
+Click Add → select your MP3 file
+Click Convert / Save
+Choose Profile → Audio - Vorbis (OGG)
+Click Browse → choose filename like audio.ogg
+Click Start
+Done ✅
+
+------------------------------------------------------------------------------
+
+✅ Method 3: Using FFmpeg (Advanced / Developer)
+If you use command line:
+ffmpeg -i input.mp3 output.ogg
+
+
+Recommendation
+| User Type   | Best Method        |
+| ----------- | ------------------ |
+| Beginner    | Online converter ✅ |
+| No internet | VLC                |
+| Developer   | FFmpeg             |

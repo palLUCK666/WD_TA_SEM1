@@ -1,0 +1,43 @@
+🔹 1. <meta charset="UTF-8"> – Character Encoding
+✔ What it does:
+
+Defines the character encoding for the webpage.
+
+UTF-8 supports almost all characters:
+
+English letters
+
+Hindi, Gujarati, Tamil, etc.
+
+Symbols & emojis (✓ © ® ❤)
+
+✔ Why it is needed:
+
+Without this tag, some characters may appear as boxes or question marks ( � ).
+
+Ensures all text displays correctly on all browsers.
+
+✔ Where it appears:
+
+Not visible on the webpage.
+
+Browser reads it internally to know how to decode text.
+___________________________________________________________________________________________
+
+🔹 2. <meta http-equiv="refresh" content="5"> – Auto Refresh
+✔ What it does:
+
+Automatically reloads the webpage after 5 seconds.
+
+You can set any number (e.g., 10, 30, 60 seconds).
+
+✔ Example effect:
+
+If content changes, the user sees updated content every 5 seconds.
+
+Used in dashboards, live score pages, or updating notices.
+
+✔ Important:
+
+This tag’s effect is visible (page refresh),
+but the meta tag itself is not shown on the webpage.

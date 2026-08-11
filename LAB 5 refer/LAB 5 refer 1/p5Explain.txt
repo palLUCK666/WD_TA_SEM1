@@ -1,0 +1,110 @@
+🔹 1. <embed>
+
+Used to embed external multimedia content.
+
+Commonly used for PDFs, audio, video.
+
+Self-closing tag.
+
+📌 Example:
+
+<embed src="sample.pdf"
+       type="application/pdf"
+       width="600"
+       height="400">
+
+Attributes:
+
+src → Path of file
+
+type → MIME type
+
+____________________________________________________________________________________________________________
+
+        🔹 Meaning of MIME
+
+        MIME stands for:
+
+        Multipurpose Internet Mail Extensions
+
+        A MIME type tells the browser what kind of file it is, so the browser knows how to handle or display it.
+
+        width, height → Display size
+
+👉 Here:
+
+application/pdf tells the browser:
+
+“This file is a PDF, display it using PDF viewer.”
+
+____________________________________________________________________________________________________
+
+
+🔹 2. <object>
+
+Used to embed external resources like PDFs, images, multimedia.
+
+Supports fallback content if resource cannot be displayed.
+
+📌 Example:
+
+<object data="sample.pdf" type="application/pdf">
+    <p>PDF cannot be displayed</p>
+</object>
+
+Attributes:
+
+data → Resource file
+
+type → Content type
+___________________________________________________________________________________________________________
+
+ What does “Supports fallback content if resource cannot be displayed” mean?
+
+This applies mainly to the <object> tag.
+
+🔹 Meaning in Simple Words
+
+Fallback content means:
+
+Alternative content shown if the browser fails to load the main resource.
+
+🔹 Why Fallback is Needed?
+
+Sometimes:
+
+Browser does not support the file
+
+File is missing
+
+Plugin not available
+
+Instead of showing nothing or error, fallback content is shown.
+
+🔹 Example from your code
+<object data="sample.pdf" type="application/pdf">
+    <p>
+        PDF cannot be displayed.
+        <a href="sample.pdf">Download PDF</a>
+    </p>
+</object>
+
+What happens:
+
+✅ If PDF loads → PDF is displayed
+
+❌ If PDF does NOT load →
+👉 The paragraph and download link appear
+
+___________________________________________________________________________________________________________
+
+🔹3. <iframe>
+
+Used to embed another webpage inside the current page.
+
+Common uses: YouTube videos, Google Maps.
+
+
+One-Line Viva Summary
+
+The <embed> and <object> tags are used to embed external files, while <iframe> embeds another webpage such as YouTube videos or Google Maps inside a webpage.

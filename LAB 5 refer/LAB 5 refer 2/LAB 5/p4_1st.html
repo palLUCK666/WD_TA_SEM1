@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+    <style>
+        body { font-family: Arial; }
+        form { width: 350px; padding: 20px; border: 1px solid #444; }
+        input { width: 100%; padding: 8px; margin: 8px 0; }
+        button { padding: 10px; }
+    </style>
+</head>
+<body>
+
+<h2>Registration Form</h2>
+
+<form>
+    <!-- Name -->
+    <label>Full Name:</label>
+    <input type="text" required>
+
+    <!-- Email -->
+    <label>Email:</label>
+    <input type="email" required>
+
+    <!-- Age -->
+    <label>Age (18 to 60):</label>
+    <input type="number" min="18" max="60" required>
+
+    <!--
+    Age Field
+    <label>Age (18 to 60):</label>
+    → Shows instruction.
+    <input type="number" min="18" max="60" required>
+    → Only numbers allowed between 18 and 60.
+    -->
+
+    <!-- Password -->
+    <label>Password:</label>
+    <input type="password"
+           pattern="(?=.*[A-Z])(?=.*[0-9]).{8,}"
+           title="Must contain at least 1 uppercase letter, 1 number and minimum 8 characters"
+           required>
+    
+    <!--
+      → Password label.
+      <input type="password"
+      → Hides typed characters.
+      
+      pattern="(?=.*[A-Z])(?=.*[0-9]).{8,}"
+      → Rule:
+      (?=.*[A-Z]) → at least one uppercase letter
+      (?=.*[0-9]) → at least one number
+      .{8,} → minimum 8 characters     
+    -->
+
+    <button type="submit">Register</button>
+</form>
+
+</body>
+</html>
