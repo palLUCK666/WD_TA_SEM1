@@ -1,0 +1,21 @@
+| Tag            | Purpose                           |
+| -------------- | --------------------------------- |
+| `<b>`          | Makes text bold                   |
+| `<i>`          | Makes text italic                 |
+| `<u>`          | Underlines text                   |
+| `<strong>`     | Indicates important text          |
+| `<em>`         | Emphasizes text                   |
+| `<sup>`        | Superscript text                  |
+| `<sub>`        | Subscript text                    |
+| `<pre>`        | Displays text exactly as typed    |
+| `<code>`       | Displays code snippets            |
+| `<blockquote>` | Shows quoted text                 |
+| `<marquee>`    | Creates scrolling text (obsolete) |
+| `<a>`          | Creates hyperlinks                |
+| `<img>`        | Displays images                   |
+| `<iframe>`     | Embeds another webpage            |
+| `<ol>`         | Ordered list                      |
+| `<ul>`         | Unordered list                    |
+| `<dl>`         | Definition list                   |
+| `<meta>`       | Provides webpage metadata         |
+| `<address>`    | Displays contact information      |
