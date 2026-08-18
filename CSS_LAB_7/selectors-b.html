@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Selectors - Part B</title>
+
+    <style>
+        /* Universal selector */
+        * {
+            font-family: Verdana, sans-serif;
+        }
+
+        /* Group selector: applies to both h1 and p */
+        h1, p {
+            color: darkblue;
+        }
+
+        /* Descendant selector: only p inside div */
+        div p {
+            color: darkred;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>CSS Selectors - Part B</h1>
+
+    <p>This paragraph is styled using the <b>group selector (h1, p)</b>.</p>
+
+    <div>
+        <p>
+            This paragraph is inside a div, so it uses the
+            <b>descendant selector (div p)</b>.
+        </p>
+    </div>
+
+    <span>
+        <p>This paragraph is not inside a div, only group selector affects it.</p>
+    </span>
+
+</body>
+</html>

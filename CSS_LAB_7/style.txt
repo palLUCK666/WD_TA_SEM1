@@ -1,0 +1,173 @@
+CSS (Cascading Style Sheets)
+CSS is used to style HTML elements (color, size, layout, spacing, fonts, etc.).
+---------------------------------------------------------------------------------------------
+
+1) <style> Tag (Internal CSS)
+What is <style> tag?
+Used to write CSS inside the HTML file.
+Placed inside the <head> section.
+Styles apply to the whole page.
+
+SYNTAX:
+<style>
+selector {
+    property: value;
+}
+</style>
+
+Example:-
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        p {
+            color: blue;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <p>Hello CSS</p>
+</body>
+</html>
+
+
+Advantages
+
+✔ No extra file required
+✔ Easy for small projects
+✔ Faster than external for single page
+
+Disadvantages
+
+❌ Not reusable for other pages
+❌ Makes HTML file lengthy
+❌ Hard to maintain for large websites
+
+------------------------------------------------------------------------------------------
+
+Types of CSS
+There are three types:
+
+| Type         | Description                     |
+| ------------ | ------------------------------- |
+| Inline CSS   | Written inside HTML tag         |
+| Internal CSS | Written inside `<style>` tag    |
+| External CSS | Written in separate `.css` file |
+
+
+A) Inline CSS
+Definition
+
+CSS written directly inside HTML element using style attribute.
+
+SYNTAX: 
+<tag style="property:value;">
+
+Example:
+<p style="color:red; font-size:20px;">Hello Inline CSS</p>
+
+Advantages
+
+✔ Highest priority
+✔ Quick for testing
+
+Disadvantages
+
+❌ Not reusable
+❌ Messy code
+❌ Not recommended for large projects
+
+
+
+B) Internal CSS (Using <style> tag)
+Definition
+
+CSS written inside <style> tag in the <head> section.
+
+EXAMPLE:-
+<style>
+h1 {
+    color: green;
+}
+</style>
+
+
+Used when:
+
+Single page website
+Small projects
+Page-specific styling
+
+
+C) External CSS
+Definition
+
+CSS written in a separate file and linked to HTML.
+
+Steps to use:
+Step 1: Create file style.css
+Write your css inside
+p {
+    color: purple;
+    font-size: 18px;
+}
+
+Step 2: Link in HTML
+<link rel="stylesheet" href="style.css"> , where style.css is your file name
+(place inside <head>)
+
+
+Advantages
+
+✔ Reusable for many pages
+✔ Clean HTML
+✔ Easy maintenance
+✔ Professional method
+
+Disadvantages
+
+❌ Extra file required
+❌ Slightly slower first load
+
+----------------------------------------------------------------------------------------------
+
+CSS Priority Order (Very Important for Exams)
+
+If same element has multiple styles:
+
+Inline CSS   (highest priority)
+Internal CSS
+External CSS (lowest priority)
+Browser default
+-----------------------------------------------------------------------------------------------
+
+Example Showing All Three
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        p {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+
+<p style="color:red;">This will be RED (Inline wins)</p>
+
+</body>
+</html>
+---------------------------------------------------------------------------------------------------
+
+| Feature  | Inline     | Internal         | External       |
+| -------- | ---------- | ---------------- | -------------- |
+| Location | Inside tag | Inside `<style>` | Separate file  |
+| Reusable | ❌         | ❌              | ✅             |
+| Best for | Quick test | Single page      | Large projects |
+| Priority | Highest    | Medium           | Lowest         |
+
+
+

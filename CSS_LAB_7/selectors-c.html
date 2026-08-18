@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Selectors - Part C</title>
+
+    <style>
+        /* Child selector: only direct li inside ul */
+        ul > li {
+            color: purple;
+            font-weight: bold;
+        }
+
+        /* Adjacent sibling selector: p immediately after h2 */
+        h2 + p {
+            background-color: rgb(255, 224, 225);
+            padding: 5px;
+        }
+
+        /* Attribute selector: all text inputs */
+        input[type="text"] {
+            border: 2px solid green;
+            padding: 5px;
+        }
+
+        input[type="password"] {
+            border: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>CSS Selectors - Part C</h1>
+
+    <h2>Child Selector (ul &gt; li)</h2>
+    <ul>
+        <li>Direct child list item 1</li>
+        <li>Direct child list item 2</li>
+        <ol>
+            <li>Nested list item (not direct child of ul)</li>
+        </ol>
+    </ul>
+
+    <h2>Adjacent Sibling Selector (h2 + p)</h2>
+    <p>This paragraph comes immediately after h2, so it is highlighted.</p>
+    <p>This paragraph is NOT immediately after h2, so no special style.</p>
+
+    <h2>Attribute Selector (input[type="text"])</h2>
+    <p>Below inputs use attribute selectors:</p>
+    <input type="text" placeholder="Text input gets green border">
+    <br><br>
+    <input type="password" placeholder="Password gets red border">
+
+</body>
+</html>
