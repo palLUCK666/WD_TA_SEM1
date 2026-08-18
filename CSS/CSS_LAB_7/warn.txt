@@ -1,0 +1,63 @@
+ even though ids must be unique then why this is working
+
+ It is working visually, but it is wrong HTML.
+
+Browsers are forgiving, so they still apply the CSS even when you break the rule.
+
+Why your code works
+
+You wrote:
+
+#myid {
+    color: red;
+}
+
+
+and used:
+
+<h1 id="myid">...</h1>
+<h1 id="myid">...</h1>
+<h2 id="myid">...</h2>
+
+What the browser does
+
+The browser:
+
+Reads the CSS rule #myid
+
+Finds all elements that have id="myid"
+
+Applies the style to them
+
+So visually, everything becomes red ✅
+
+The browser does not stop you from making this mistake.
+
+But according to HTML rules
+
+An id must be unique in the entire page.
+
+So this is invalid HTML:
+
+<h1 id="myid">
+<h1 id="myid">  ❌
+<h2 id="myid">  ❌
+
+Real problems you will face
+1. JavaScript breaks
+document.getElementById("myid")
+
+
+➡ Returns only the first element, not all.
+
+So your logic will fail.
+
+2. Anchor links break
+<a href="#myid">Go</a>
+
+
+Which one should it go to? Browser chooses the first one.
+
+3. Accessibility & SEO issues
+
+Screen readers and search engines expect IDs to be unique.

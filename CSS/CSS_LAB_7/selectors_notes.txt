@@ -1,0 +1,37 @@
+(A) Basic CSS Selectors
+
+1. Element Selector (p)
+Selects all elements of a given type.
+Example: p { color: blue; }
+
+2. Class Selector (.className)
+Selects elements with a specific class.
+Can be used on multiple elements.
+
+3. ID Selector (#idName)
+Selects one unique element.
+IDs should not be repeated.
+--------------------------------------------------
+
+(B) Group, Universal & Descendant Selectors
+
+1. Group Selector (h1, p)
+Applies same style to multiple elements.
+
+2. Universal Selector (*)
+Selects all elements on the page.
+
+3. Descendant Selector (div p)
+Selects <p> elements inside a <div>.
+--------------------------------------------------
+
+(C) Advanced Selectors
+
+a) Child Selector (ul > li)
+Selects only direct children <li> of <ul>.
+
+b) Adjacent Sibling Selector (h2 + p)
+Selects the first <p> immediately after <h2>.
+
+c) Attribute Selector (input[type="text"])
+Selects elements based on attribute and value.
