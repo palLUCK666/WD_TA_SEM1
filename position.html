@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position Demo</title>
+
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 30px auto;
+            border: 3px solid black;
+            padding: 20px;
+        }
+
+        .box {
+            width: 150px;
+            height: 80px;
+            margin: 20px;
+            padding: 10px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        /* 1. STATIC */
+        .static {
+            position: static;
+            background-color: lightblue;
+        }
+
+        /* 2. RELATIVE */
+        .relative {
+            position: relative;
+            left: 50px;
+            top: 20px;
+            background-color: lightgreen;
+        }
+
+        /* Parent for absolute positioning */
+        .parent {
+            position: relative;
+            width: 400px;
+            height: 180px;
+            border: 3px dashed red;
+            margin: 40px 20px;
+        }
+
+        /* 3. ABSOLUTE */
+        .absolute {
+            position: absolute;
+            right: 10px;
+            bottom: 10px;
+            background-color: orange;
+            margin: 0;
+        }
+
+        /* 4. FIXED */
+        .fixed {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            background-color: tomato;
+            margin: 0;
+        }
+
+        /* 5. STICKY */
+        .sticky {
+            position: sticky;
+            top: 0;
+            background-color: violet;
+            margin: 20px 0;
+        }
+
+        .space {
+            height: 1000px;
+            padding-top: 30px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>CSS Position Demo</h1>
+
+        <!-- STATIC -->
+        <h2>1. position: static</h2>
+
+        <div class="box static">
+            STATIC
+        </div>
+
+        <p>
+            Static is the default position. top, bottom, left and right
+            do not work.
+        </p>
+
+
+        <!-- RELATIVE -->
+        <h2>2. position: relative</h2>
+
+        <div class="box relative">
+            RELATIVE
+        </div>
+
+        <p>
+            Relative moves the element from its normal position.
+            Space is still reserved for the element.
+        </p>
+
+
+        <!-- ABSOLUTE -->
+        <h2>3. position: absolute</h2>
+
+        <div class="parent">
+
+            Parent<br>
+            position: relative
+
+            <div class="box absolute">
+                ABSOLUTE
+            </div>
+
+        </div>
+
+        <p>
+            Absolute removes the element from normal flow and positions
+            it relative to the nearest positioned parent.
+        </p>
+
+
+        <!-- STICKY -->
+        <h2>4. position: sticky</h2>
+
+        <div class="sticky">
+            STICKY — Scroll the page ↓
+        </div>
+
+        <p>
+            Sticky behaves normally until you scroll to its specified
+            position, then it sticks there.
+        </p>
+
+        <div class="space">
+            <h2>Scroll down...</h2>
+            <p>
+                The sticky element will remain at the top while scrolling.
+            </p>
+        </div>
+
+    </div>
+
+
+    <!-- FIXED -->
+    <div class="box fixed">
+        FIXED
+    </div>
+
+</body>
+</html>

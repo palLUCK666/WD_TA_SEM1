@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS Display Property Demo</title>
+
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            width: 80%;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: white;
+            border: 3px solid black;
+        }
+
+        .box {
+            width: 150px;
+            height: 70px;
+            padding: 10px;
+            margin: 10px;
+            border: 3px solid black;
+            text-align: center;
+            font-weight: bold;
+        }
+
+
+        /* =========================================
+           1. DISPLAY: BLOCK
+           ========================================= */
+
+        .block {
+            display: block;
+
+            background-color: lightblue;
+        }
+
+
+        /* =========================================
+           2. DISPLAY: INLINE
+           ========================================= */
+
+        .inline {
+            display: inline;
+
+            /*
+                width and height do NOT work
+                properly on inline elements
+            */
+
+            background-color: lightgreen;
+        }
+
+
+        /* =========================================
+           3. DISPLAY: INLINE-BLOCK
+           ========================================= */
+
+        .inline-block {
+            display: inline-block;
+
+            background-color: orange;
+        }
+
+
+        /* =========================================
+           4. DISPLAY: NONE
+           ========================================= */
+
+        .none {
+            display: none;
+
+            background-color: tomato;
+        }
+
+
+        /* =========================================
+           5. DISPLAY: FLEX
+           ========================================= */
+
+        .flex-container {
+            display: flex;
+
+            gap: 15px;
+
+            border: 3px dashed red;
+            padding: 15px;
+        }
+
+        .flex-box {
+            width: 100px;
+            height: 60px;
+
+            background-color: violet;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            font-weight: bold;
+        }
+
+
+        /* =========================================
+           6. DISPLAY: GRID
+           ========================================= */
+
+        .grid-container {
+            display: grid;
+
+            grid-template-columns: repeat(3, 1fr);
+
+            gap: 15px;
+
+            border: 3px dashed blue;
+            padding: 15px;
+        }
+
+        .grid-box {
+            height: 60px;
+
+            background-color: lightcoral;
+
+            display: grid;
+            place-items: center;
+
+            font-weight: bold;
+        }
+
+
+        /* =========================================
+           EXPLANATION
+           ========================================= */
+
+        .explanation {
+            font-size: 18px;
+            line-height: 1.5;
+
+            margin: 10px 20px 30px;
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+<div class="container">
+
+    <h1>CSS Display Property Demo</h1>
+
+
+    <!-- =========================================
+         BLOCK
+         ========================================= -->
+
+    <h2>1. display: block</h2>
+
+    <div class="box block">
+        BLOCK
+    </div>
+
+    <div class="explanation">
+
+        <b>BLOCK</b>
+        <br>
+        ↓
+        <br>
+        Takes the full available width
+        <br>
+        Starts on a new line
+
+    </div>
+
+
+    <!-- =========================================
+         INLINE
+         ========================================= -->
+
+    <h2>2. display: inline</h2>
+
+    <span class="box inline">
+        INLINE 1
+    </span>
+
+    <span class="box inline">
+        INLINE 2
+    </span>
+
+    <div class="explanation">
+
+        <b>INLINE</b>
+        <br>
+        ↓
+        <br>
+        Stays in the same line
+        <br>
+        Width and height don't work normally
+
+    </div>
+
+
+    <!-- =========================================
+         INLINE-BLOCK
+         ========================================= -->
+
+    <h2>3. display: inline-block</h2>
+
+    <div class="box inline-block">
+        INLINE-BLOCK 1
+    </div>
+
+    <div class="box inline-block">
+        INLINE-BLOCK 2
+    </div>
+
+    <div class="explanation">
+
+        <b>INLINE-BLOCK</b>
+        <br>
+        ↓
+        <br>
+        Same line + width/height work
+
+    </div>
+
+
+    <!-- =========================================
+         NONE
+         ========================================= -->
+
+    <h2>4. display: none</h2>
+
+    <div class="box none">
+        YOU CANNOT SEE ME
+    </div>
+
+    <div class="explanation">
+
+        <b>NONE</b>
+        <br>
+        ↓
+        <br>
+        Completely removed from the page
+
+    </div>
+
+
+    <!-- =========================================
+         FLEX
+         ========================================= -->
+
+    <h2>5. display: flex</h2>
+
+    <div class="flex-container">
+
+        <div class="flex-box">1</div>
+        <div class="flex-box">2</div>
+        <div class="flex-box">3</div>
+
+    </div>
+
+    <div class="explanation">
+
+        <b>FLEX</b>
+        <br>
+        ↓
+        <br>
+        Arranges items in a flexible row or column
+
+    </div>
+
+
+    <!-- =========================================
+         GRID
+         ========================================= -->
+
+    <h2>6. display: grid</h2>
+
+    <div class="grid-container">
+
+        <div class="grid-box">1</div>
+        <div class="grid-box">2</div>
+        <div class="grid-box">3</div>
+        <div class="grid-box">4</div>
+        <div class="grid-box">5</div>
+        <div class="grid-box">6</div>
+
+    </div>
+
+    <div class="explanation">
+
+        <b>GRID</b>
+        <br>
+        ↓
+        <br>
+        Arranges items in rows and columns
+
+    </div>
+
+
+</div>
+
+</body>
+</html>
