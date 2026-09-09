@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS Gradients - Every Value Demo</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,sans-serif;background:#f2f4f7;color:#222}
+header{background:linear-gradient(135deg,#141e30,#243b55);color:#fff;padding:35px 20px;text-align:center}
+header h1{margin:0 0 8px;font-size:34px}
+.container{max-width:1100px;margin:25px auto;padding:0 18px}
+section{background:#fff;padding:22px;margin-bottom:22px;border-radius:12px;box-shadow:0 3px 14px #0001}
+h2{margin:0 0 8px}
+h3{margin-bottom:8px}
+.demo{height:130px;border-radius:8px;border:1px solid #ddd;margin:12px 0}
+.item{margin:20px 0 28px}
+pre{background:#111827;color:#e5e7eb;padding:14px;border-radius:8px;overflow:auto;margin:8px 0}
+code{font-family:Consolas,monospace}
+.note{padding:10px;background:#f5f5f5;border-left:4px solid #555}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.small{height:110px}
+
+/* LINEAR DIRECTIONS */
+.lr{background:linear-gradient(to right,red,blue)}
+.ll{background:linear-gradient(to left,red,blue)}
+.lt{background:linear-gradient(to top,red,blue)}
+.lb{background:linear-gradient(to bottom,red,blue)}
+.tl{background:linear-gradient(to top left,red,blue)}
+.tr{background:linear-gradient(to top right,red,blue)}
+.bl{background:linear-gradient(to bottom left,red,blue)}
+.br{background:linear-gradient(to bottom right,red,blue)}
+
+/* ANGLES */
+.a0{background:linear-gradient(0deg,red,blue)}
+.a45{background:linear-gradient(45deg,red,blue)}
+.a90{background:linear-gradient(90deg,red,blue)}
+.a180{background:linear-gradient(180deg,red,blue)}
+.a270{background:linear-gradient(270deg,red,blue)}
+
+/* COLOR STOPS */
+.stops{background:linear-gradient(to right,red 0%,orange 25%,yellow 50%,green 75%,blue 100%)}
+.hard{background:linear-gradient(to right,red 0 20%,blue 20% 40%,green 40% 60%,orange 60% 80%,purple 80% 100%)}
+
+/* RADIAL SHAPES */
+.rcircle{background:radial-gradient(circle,red,orange,yellow,green)}
+.rellipse{background:radial-gradient(ellipse,red,orange,yellow,green)}
+.rclosest{background:radial-gradient(circle closest-side,red,blue)}
+.rfarthest{background:radial-gradient(circle farthest-side,red,blue)}
+.rclosestcorner{background:radial-gradient(circle closest-corner,red,blue)}
+.rfarthestcorner{background:radial-gradient(circle farthest-corner,red,blue)}
+
+/* RADIAL POSITIONS */
+.center{background:radial-gradient(circle at center,red,blue)}
+.top{background:radial-gradient(circle at top,red,blue)}
+.bottom{background:radial-gradient(circle at bottom,red,blue)}
+.left{background:radial-gradient(circle at left,red,blue)}
+.right{background:radial-gradient(circle at right,red,blue)}
+.tlpos{background:radial-gradient(circle at top left,red,blue)}
+.trpos{background:radial-gradient(circle at top right,red,blue)}
+.blpos{background:radial-gradient(circle at bottom left,red,blue)}
+.brpos{background:radial-gradient(circle at bottom right,red,blue)}
+.custompos{background:radial-gradient(circle at 30% 70%,red,blue)}
+
+/* RADIAL SIZE */
+.near{background:radial-gradient(circle closest-side at center,red,blue)}
+.far{background:radial-gradient(circle farthest-side at center,red,blue)}
+.nearcorner{background:radial-gradient(circle closest-corner at center,red,blue)}
+.farcorner{background:radial-gradient(circle farthest-corner at center,red,blue)}
+
+/* CONIC */
+.conic{background:conic-gradient(red,yellow,green,cyan,blue,magenta,red)}
+.c0{background:conic-gradient(from 0deg,red,yellow,blue,red)}
+.c45{background:conic-gradient(from 45deg,red,yellow,blue,red)}
+.c90{background:conic-gradient(from 90deg,red,yellow,blue,red)}
+.c180{background:conic-gradient(from 180deg,red,yellow,blue,red)}
+.catcenter{background:conic-gradient(at center,red,yellow,blue,red)}
+.catcorner{background:conic-gradient(at 25% 75%,red,yellow,blue,red)}
+.cstops{background:conic-gradient(red 0deg,yellow 90deg,green 180deg,blue 270deg,red 360deg)}
+
+/* REPEATING */
+.rl{background:repeating-linear-gradient(45deg,#222 0 15px,#fff 15px 30px)}
+.rl2{background:repeating-linear-gradient(to right,red 0 20px,blue 20px 40px)}
+.rr{background:repeating-radial-gradient(circle,red 0 15px,white 15px 30px)}
+.rr2{background:repeating-radial-gradient(circle at center,blue 0 10px,yellow 10px 20px)}
+
+/* MULTIPLE */
+.multi{background:linear-gradient(135deg,#ff0066aa,#00ffffaa),radial-gradient(circle at 70% 30%,yellow,transparent 35%),#171717}
+
+table{width:100%;border-collapse:collapse}
+th,td{padding:10px;border:1px solid #ddd;text-align:left}
+th{background:#eee}
+@media(max-width:700px){.grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<header>
+<h1>CSS Gradients — Every Important Value</h1>
+<p>Each value is demonstrated separately with its CSS code</p>
+</header>
+
+<div class="container">
+
+<section>
+<h2>1. Linear Gradient — Direction Values</h2>
+<p>Syntax: <code>linear-gradient(direction, color1, color2)</code></p>
+
+<div class="grid">
+<div class="item"><h3>to right</h3><div class="demo small lr"></div><pre>linear-gradient(to right, red, blue);</pre></div>
+<div class="item"><h3>to left</h3><div class="demo small ll"></div><pre>linear-gradient(to left, red, blue);</pre></div>
+<div class="item"><h3>to top</h3><div class="demo small lt"></div><pre>linear-gradient(to top, red, blue);</pre></div>
+<div class="item"><h3>to bottom</h3><div class="demo small lb"></div><pre>linear-gradient(to bottom, red, blue);</pre></div>
+<div class="item"><h3>to top left</h3><div class="demo small tl"></div><pre>linear-gradient(to top left, red, blue);</pre></div>
+<div class="item"><h3>to top right</h3><div class="demo small tr"></div><pre>linear-gradient(to top right, red, blue);</pre></div>
+<div class="item"><h3>to bottom left</h3><div class="demo small bl"></div><pre>linear-gradient(to bottom left, red, blue);</pre></div>
+<div class="item"><h3>to bottom right</h3><div class="demo small br"></div><pre>linear-gradient(to bottom right, red, blue);</pre></div>
+</div>
+</section>
+
+<section>
+<h2>2. Linear Gradient — Angle Values</h2>
+<p>Angles use <code>deg</code>. Common examples are 0°, 45°, 90°, 180° and 270°.</p>
+<div class="grid">
+<div class="item"><h3>0deg</h3><div class="demo small a0"></div><pre>linear-gradient(0deg, red, blue);</pre></div>
+<div class="item"><h3>45deg</h3><div class="demo small a45"></div><pre>linear-gradient(45deg, red, blue);</pre></div>
+<div class="item"><h3>90deg</h3><div class="demo small a90"></div><pre>linear-gradient(90deg, red, blue);</pre></div>
+<div class="item"><h3>180deg</h3><div class="demo small a180"></div><pre>linear-gradient(180deg, red, blue);</pre></div>
+<div class="item"><h3>270deg</h3><div class="demo small a270"></div><pre>linear-gradient(270deg, red, blue);</pre></div>
+</div>
+</section>
+
+<section>
+<h2>3. Linear Gradient — Color Stops</h2>
+<p>A color stop tells CSS where a color should appear. Positions can use %, px, etc.</p>
+<div class="demo stops"></div>
+<pre>linear-gradient(to right,
+    red 0%,
+    orange 25%,
+    yellow 50%,
+    green 75%,
+    blue 100%
+);</pre>
+
+<h3>Hard Color Stops</h3>
+<div class="demo hard"></div>
+<pre>linear-gradient(to right,
+    red 0 20%,
+    blue 20% 40%,
+    green 40% 60%,
+    orange 60% 80%,
+    purple 80% 100%
+);</pre>
+</section>
+
+<section>
+<h2>4. Radial Gradient — Shape Values</h2>
+<p>Radial gradients support <code>circle</code> and <code>ellipse</code>.</p>
+<div class="grid">
+<div class="item"><h3>circle</h3><div class="demo small rcircle"></div><pre>radial-gradient(circle, red, orange, yellow, green);</pre></div>
+<div class="item"><h3>ellipse</h3><div class="demo small rellipse"></div><pre>radial-gradient(ellipse, red, orange, yellow, green);</pre></div>
+</div>
+
+<h3>Size Keywords</h3>
+<div class="grid">
+<div class="item"><h3>closest-side</h3><div class="demo small rclosest"></div><pre>radial-gradient(circle closest-side, red, blue);</pre></div>
+<div class="item"><h3>farthest-side</h3><div class="demo small rfarthest"></div><pre>radial-gradient(circle farthest-side, red, blue);</pre></div>
+<div class="item"><h3>closest-corner</h3><div class="demo small rclosestcorner"></div><pre>radial-gradient(circle closest-corner, red, blue);</pre></div>
+<div class="item"><h3>farthest-corner</h3><div class="demo small rfarthestcorner"></div><pre>radial-gradient(circle farthest-corner, red, blue);</pre></div>
+</div>
+</section>
+
+<section>
+<h2>5. Radial Gradient — Position Values</h2>
+<p>The <code>at</code> keyword changes the gradient's center.</p>
+<div class="grid">
+<div class="item"><h3>center</h3><div class="demo small center"></div><pre>radial-gradient(circle at center, red, blue);</pre></div>
+<div class="item"><h3>top</h3><div class="demo small top"></div><pre>radial-gradient(circle at top, red, blue);</pre></div>
+<div class="item"><h3>bottom</h3><div class="demo small bottom"></div><pre>radial-gradient(circle at bottom, red, blue);</pre></div>
+<div class="item"><h3>left</h3><div class="demo small left"></div><pre>radial-gradient(circle at left, red, blue);</pre></div>
+<div class="item"><h3>right</h3><div class="demo small right"></div><pre>radial-gradient(circle at right, red, blue);</pre></div>
+<div class="item"><h3>top left</h3><div class="demo small tlpos"></div><pre>radial-gradient(circle at top left, red, blue);</pre></div>
+<div class="item"><h3>top right</h3><div class="demo small trpos"></div><pre>radial-gradient(circle at top right, red, blue);</pre></div>
+<div class="item"><h3>bottom left</h3><div class="demo small blpos"></div><pre>radial-gradient(circle at bottom left, red, blue);</pre></div>
+<div class="item"><h3>bottom right</h3><div class="demo small brpos"></div><pre>radial-gradient(circle at bottom right, red, blue);</pre></div>
+<div class="item"><h3>Custom 30% 70%</h3><div class="demo small custompos"></div><pre>radial-gradient(circle at 30% 70%, red, blue);</pre></div>
+</div>
+</section>
+
+<section>
+<h2>6. Radial Gradient — Explicit Size</h2>
+<div class="grid">
+<div class="item"><h3>closest-side</h3><div class="demo small near"></div><pre>radial-gradient(circle closest-side at center, red, blue);</pre></div>
+<div class="item"><h3>farthest-side</h3><div class="demo small far"></div><pre>radial-gradient(circle farthest-side at center, red, blue);</pre></div>
+<div class="item"><h3>closest-corner</h3><div class="demo small nearcorner"></div><pre>radial-gradient(circle closest-corner at center, red, blue);</pre></div>
+<div class="item"><h3>farthest-corner</h3><div class="demo small farcorner"></div><pre>radial-gradient(circle farthest-corner at center, red, blue);</pre></div>
+</div>
+</section>
+
+<section>
+<h2>7. Conic Gradient — Angle Values</h2>
+<div class="item"><h3>Basic conic gradient</h3><div class="demo conic"></div><pre>conic-gradient(red, yellow, green, cyan, blue, magenta, red);</pre></div>
+<div class="grid">
+<div class="item"><h3>from 0deg</h3><div class="demo small c0"></div><pre>conic-gradient(from 0deg, red, yellow, blue, red);</pre></div>
+<div class="item"><h3>from 45deg</h3><div class="demo small c45"></div><pre>conic-gradient(from 45deg, red, yellow, blue, red);</pre></div>
+<div class="item"><h3>from 90deg</h3><div class="demo small c90"></div><pre>conic-gradient(from 90deg, red, yellow, blue, red);</pre></div>
+<div class="item"><h3>from 180deg</h3><div class="demo small c180"></div><pre>conic-gradient(from 180deg, red, yellow, blue, red);</pre></div>
+</div>
+</section>
+
+<section>
+<h2>8. Conic Gradient — Center Position</h2>
+<div class="grid">
+<div class="item"><h3>at center</h3><div class="demo small catcenter"></div><pre>conic-gradient(at center, red, yellow, blue, red);</pre></div>
+<div class="item"><h3>at 25% 75%</h3><div class="demo small catcorner"></div><pre>conic-gradient(at 25% 75%, red, yellow, blue, red);</pre></div>
+</div>
+<h3>Conic Color Stops</h3>
+<div class="demo cstops"></div>
+<pre>conic-gradient(
+    red 0deg,
+    yellow 90deg,
+    green 180deg,
+    blue 270deg,
+    red 360deg
+);</pre>
+</section>
+
+<section>
+<h2>9. Repeating Gradients</h2>
+<div class="grid">
+<div class="item"><h3>Repeating Linear</h3><div class="demo small rl"></div><pre>repeating-linear-gradient(
+    45deg, #222 0 15px, white 15px 30px
+);</pre></div>
+<div class="item"><h3>Repeating Linear — horizontal</h3><div class="demo small rl2"></div><pre>repeating-linear-gradient(
+    to right, red 0 20px, blue 20px 40px
+);</pre></div>
+<div class="item"><h3>Repeating Radial</h3><div class="demo small rr"></div><pre>repeating-radial-gradient(
+    circle, red 0 15px, white 15px 30px
+);</pre></div>
+<div class="item"><h3>Repeating Radial — center</h3><div class="demo small rr2"></div><pre>repeating-radial-gradient(
+    circle at center, blue 0 10px, yellow 10px 20px
+);</pre></div>
+</div>
+</section>
+
+<section>
+<h2>10. Multiple Gradients</h2>
+<p>Multiple gradients are separated by commas. The first gradient is painted on top.</p>
+<div class="demo multi"></div>
+<pre>background:
+linear-gradient(135deg, #ff0066aa, #00ffffaa),
+radial-gradient(circle at 70% 30%, yellow, transparent 35%),
+#171717;</pre>
+</section>
+
+<section>
+<h2>11. Important Gradient Values — Quick Table</h2>
+<table>
+<tr><th>Gradient</th><th>Value</th><th>Meaning</th></tr>
+<tr><td>Linear</td><td>to right</td><td>Left → right</td></tr>
+<tr><td>Linear</td><td>to left</td><td>Right → left</td></tr>
+<tr><td>Linear</td><td>to top</td><td>Bottom → top</td></tr>
+<tr><td>Linear</td><td>to bottom</td><td>Top → bottom</td></tr>
+<tr><td>Linear</td><td>45deg</td><td>Diagonal direction</td></tr>
+<tr><td>Radial</td><td>circle</td><td>Circular shape</td></tr>
+<tr><td>Radial</td><td>ellipse</td><td>Elliptical shape</td></tr>
+<tr><td>Radial</td><td>at center/top/etc.</td><td>Gradient center position</td></tr>
+<tr><td>Radial</td><td>closest-side</td><td>Ends at nearest side</td></tr>
+<tr><td>Radial</td><td>farthest-side</td><td>Reaches farthest side</td></tr>
+<tr><td>Radial</td><td>closest-corner</td><td>Ends at nearest corner</td></tr>
+<tr><td>Radial</td><td>farthest-corner</td><td>Reaches farthest corner</td></tr>
+<tr><td>Conic</td><td>from 45deg</td><td>Changes starting angle</td></tr>
+<tr><td>Conic</td><td>at 25% 75%</td><td>Changes center position</td></tr>
+<tr><td>All</td><td>color stop (%)</td><td>Controls color position</td></tr>
+<tr><td>Repeating</td><td>repeating-*</td><td>Repeats the gradient pattern</td></tr>
+</table>
+</section>
+
+</div>
+</body>
+</html>
