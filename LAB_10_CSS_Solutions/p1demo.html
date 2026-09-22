@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>p1</title>
+    <style>
+        .container{
+            background-color: aquamarine;
+            border: 2px solid black;
+            height: 500px;
+            width: 600px;
+            margin-left: 28%;
+            margin-top: 5%;
+            position: relative;
+        }
+        .box{
+            background-color: red;
+            height: 100px;
+            width: 100px;
+            position: absolute;
+            animation-name: move-box;
+            animation-delay: 2s;
+            animation-duration: 6s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+           
+
+        }
+        @keyframes move-box{
+            0%{
+                top: 0;
+                left:0;
+                background-color: red;
+            }
+            25%{
+                top: 400px;
+                left: 0;
+                background-color: yellow;
+            }
+            50%{
+                top: 400px;
+                left: 500px;
+                background-color: yellow;
+            }
+            75%{
+                top: 0;
+                left: 500px;
+                background-color: yellow;
+            }
+            100%{
+                top: 0;
+                left:0;
+                background-color: red;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Custom Animation</title>
+
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #111;
+        }
+
+        .box {
+            width: 500px;
+            height: 300px;
+            border: 3px solid white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .ball {
+            width: 60px;
+            height: 60px;
+            background-color: cyan;
+            border-radius: 50%;
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+
+            box-shadow: 0 0 20px cyan;
+
+            animation: bounce 3s infinite ease-in-out;
+        }
+
+        @keyframes bounce {
+            0% {
+                left: 20px;
+                bottom: 20px;
+                transform: scale(1);
+            }
+
+            25% {
+                left: 200px;
+                bottom: 200px;
+                transform: scale(1.2);
+            }
+
+            50% {
+                left: 420px;
+                bottom: 20px;
+                transform: scale(1);
+            }
+
+            75% {
+                left: 200px;
+                bottom: 200px;
+                transform: scale(1.2);
+            }
+
+            100% {
+                left: 20px;
+                bottom: 20px;
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box">
+        <div class="ball"></div>
+    </div>
+
+</body>
+</html>

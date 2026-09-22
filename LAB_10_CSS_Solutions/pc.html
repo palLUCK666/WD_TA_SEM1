@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Screensaver Animation</title>
+
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background: black;
+        }
+
+        .screen {
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .ball {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            position: absolute;
+            box-shadow: 0 0 25px currentColor;
+        }
+
+        .ball1 {
+            background: red;
+            color: red;
+            animation: move1 6s linear infinite;
+        }
+
+        .ball2 {
+            background: cyan;
+            color: cyan;
+            animation: move2 8s linear infinite;
+        }
+
+        .ball3 {
+            background: lime;
+            color: lime;
+            animation: move3 7s linear infinite;
+        }
+
+        .ball4 {
+            background: yellow;
+            color: yellow;
+            animation: move4 9s linear infinite;
+        }
+
+        @keyframes move1 {
+            0% {
+                top: 0;
+                left: 0;
+            }
+
+            25% {
+                top: 0;
+                left: 90%;
+            }
+
+            50% {
+                top: 85%;
+                left: 90%;
+            }
+
+            75% {
+                top: 85%;
+                left: 0;
+            }
+
+            100% {
+                top: 0;
+                left: 0;
+            }
+        }
+
+        @keyframes move2 {
+            0% {
+                top: 80%;
+                left: 0;
+            }
+
+            25% {
+                top: 0;
+                left: 90%;
+            }
+
+            50% {
+                top: 80%;
+                left: 90%;
+            }
+
+            75% {
+                top: 0;
+                left: 0;
+            }
+
+            100% {
+                top: 80%;
+                left: 0;
+            }
+        }
+
+        @keyframes move3 {
+            0% {
+                top: 50%;
+                left: 0;
+            }
+
+            50% {
+                top: 0;
+                left: 90%;
+            }
+
+            100% {
+                top: 50%;
+                left: 0;
+            }
+        }
+
+        @keyframes move4 {
+            0% {
+                top: 0;
+                left: 50%;
+            }
+
+            25% {
+                top: 80%;
+                left: 90%;
+            }
+
+            50% {
+                top: 0;
+                left: 50%;
+            }
+
+            75% {
+                top: 80%;
+                left: 0;
+            }
+
+            100% {
+                top: 0;
+                left: 50%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="screen">
+
+        <div class="ball ball1"></div>
+        <div class="ball ball2"></div>
+        <div class="ball ball3"></div>
+        <div class="ball ball4"></div>
+
+    </div>
+
+</body>
+</html>
