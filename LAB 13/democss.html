@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pseudo Class and Pseudo Element Demo</title>
+
+    <style>
+
+        /* =====================================================
+           PSEUDO-CLASSES
+           ===================================================== */
+
+        /* 1. :hover
+           Applies when mouse is placed over an element */
+        .hover-btn:hover {
+            background-color: green;
+            color: white;
+        }
+
+
+        /* 2. :active
+           Applies while an element is being clicked */
+        .active-btn:active {
+            background-color: red;
+            color: white;
+        }
+
+
+        /* 3. :focus
+           Applies when an input is selected */
+        input:focus {
+            background-color: lightyellow;
+            border: 3px solid blue;
+        }
+
+
+        /* 4. :visited
+           Applies to a link that has already been visited */
+        a:visited {
+            color: purple;
+        }
+
+
+        /* 5. :link
+           Applies to an unvisited link */
+        a:link {
+            color: blue;
+        }
+
+
+        /* 6. :first-child
+           Selects an element that is the first child */
+        .list li:first-child {
+            color: red;
+            font-weight: bold;
+        }
+
+
+        /* 7. :last-child
+           Selects the last child */
+        .list li:last-child {
+            color: green;
+            font-weight: bold;
+        }
+
+
+        /* 8. :nth-child()
+           Selects elements according to their position */
+        .list li:nth-child(2) {
+            background-color: lightblue;
+        }
+
+
+        /* 9. :nth-child(even)
+           Selects even numbered children */
+        .table tr:nth-child(even) {
+            background-color: rgb(228, 33, 33);
+        }
+
+
+        /* 10. :nth-child(odd)
+            Selects odd numbered children */
+        .table tr:nth-child(odd) {
+            background-color: white;
+        }
+
+
+
+        /* 14. :only-child */
+        .only-child p:only-child {
+            color: red;
+            font-weight: bold;
+        }
+
+
+        /* 15. :empty
+            Selects an element that has no content */
+        .empty:empty {
+            width: 100px;
+            height: 30px;
+            background-color: orange;
+        }
+
+
+        /* 16. :not()
+            Selects everything except the specified element */
+        .not-demo p:not(.special) {
+            color: gray;
+        }
+
+
+        /* 17. :checked
+            Applies to checked checkbox/radio */
+        input[type="checkbox"]:checked {
+            accent-color: green;
+        }
+
+
+        /* 18. :disabled */
+        input:disabled {
+            background-color: lightgray;
+        }
+
+
+        /* 19. :enabled */
+        input:enabled {
+            border: 2px solid green;
+        }
+
+
+        /* 20. :required */
+        input:required {
+            border-left: 5px solid orange;
+        }
+
+
+        /* 21. :optional */
+        input:optional {
+            border-left: 5px solid blue;
+        }
+
+
+        /* 22. :valid */
+        input[type="email"]:valid {
+            background-color: lightgreen;
+        }
+
+
+        /* 23. :invalid */
+        input[type="email"]:invalid {
+            background-color: pink;
+        }
+
+
+        /* =====================================================
+           PSEUDO-ELEMENTS
+           ===================================================== */
+
+        /* 1. ::before
+           Adds content before an element */
+        .before::before {
+            content: "★ ";
+            color: red;
+        }
+
+
+        /* 2. ::after
+           Adds content after an element */
+        .after::after {
+            content: " ✔";
+            color: green;
+        }
+
+
+        /* 3. ::first-letter
+           Styles the first letter */
+        .first-letter::first-letter {
+            font-size: 40px;
+            color: red;
+            font-weight: bold;
+        }
+
+
+        /* 4. ::first-line
+           Styles the first line */
+        .first-line::first-line {
+            color: blue;
+            font-weight: bold;
+        }
+
+
+        /* 5. ::selection
+           Styles selected/highlighted text */
+        .selection::selection {
+            background-color: rgb(216, 114, 114);
+            color: white;
+        }
+
+
+        /* 6. ::placeholder
+           Styles placeholder text */
+        .placeholder::placeholder {
+            color: red;
+            font-style: italic;
+        }
+
+
+        /* 7. ::marker
+           Styles list bullets/numbers */
+        .marker li::marker {
+            color: red;
+            font-size: 20px;
+        }
+
+
+        /* 8. ::file-selector-button
+           Styles file upload button */
+        input[type="file"]::file-selector-button {
+            background-color: blue;
+            color: white;
+            padding: 8px;
+            border: none;
+        }
+
+
+        /* General styling */
+        body {
+            font-family: Arial;
+            margin: 30px;
+        }
+
+        section {
+            border: 1px solid gray;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin: 5px;
+            cursor: pointer;
+        }
+
+        input {
+            padding: 8px;
+            margin: 5px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1>Pseudo Class and Pseudo Element Demo</h1>
+
+
+    <!-- =====================================================
+         PSEUDO-CLASSES
+         ===================================================== -->
+
+    <section>
+
+        <h2>Pseudo-Classes</h2>
+
+        <h3>:hover</h3>
+        <button class="hover-btn">
+            Move Mouse Over Me
+        </button>
+
+
+        <h3>:active</h3>
+        <button class="active-btn">
+            Click and Hold Me
+        </button>
+
+
+        <h3>:focus</h3>
+        <input type="text" placeholder="Click inside me">
+
+
+        <h3>:link and :visited</h3>
+        <a href="https://www.google.com">
+            Visit Google
+        </a>
+
+
+        <h3>:first-child, :last-child, :nth-child</h3>
+
+        <ul class="list">
+            <li>First Item</li>
+            <li>Second Item</li>
+            <li>Third Item</li>
+            <li>Fourth Item</li>
+            <li>Last Item</li>
+        </ul>
+
+
+        <h3>:nth-child(even) and :nth-child(odd)</h3>
+
+        <table border="1" class="table">
+            <tr>
+                <td>Row 1</td>
+            </tr>
+            <tr>
+                <td>Row 2</td>
+            </tr>
+            <tr>
+                <td>Row 3</td>
+            </tr>
+            <tr>
+                <td>Row 4</td>
+            </tr>
+        </table>
+
+
+      
+        <h3>:only-child</h3>
+
+        <div class="only-child">
+            <p>I am the only child.</p>
+        </div>
+
+
+        <h3>:empty</h3>
+
+        <div class="empty"></div>
+
+
+        <h3>:not()</h3>
+
+        <div class="not-demo">
+            <p>Normal paragraph</p>
+            <p class="special">Special paragraph</p>
+            <p>Normal paragraph</p>
+        </div>
+
+
+        <h3>:checked</h3>
+
+        <label>
+            <input type="checkbox">
+            Check me
+        </label>
+
+
+        <h3>:disabled and :enabled</h3>
+
+        <input type="text" placeholder="Enabled input">
+
+        <input type="text"
+               placeholder="Disabled input"
+               disabled>
+
+
+        <h3>:required and :optional</h3>
+
+        <input type="text"
+               placeholder="Required"
+               required>
+
+        <input type="text"
+               placeholder="Optional">
+
+
+        <h3>:valid and :invalid</h3>
+
+        <input type="email"
+               placeholder="Enter email">
+
+    </section>
+
+
+
+    <!-- =====================================================
+         PSEUDO-ELEMENTS
+         ===================================================== -->
+
+    <section>
+
+        <h2>Pseudo-Elements</h2>
+
+
+        <h3>::before</h3>
+
+        <p class="before">
+            This text has something before it.
+        </p>
+
+
+        <h3>::after</h3>
+
+        <p class="after">
+            This text has something after it.
+        </p>
+
+
+        <h3>::first-letter</h3>
+
+        <p class="first-letter">
+            This paragraph demonstrates the first-letter
+            pseudo-element.
+        </p>
+
+
+        <h3>::first-line</h3>
+
+        <p class="first-line">
+            This is the first line of this paragraph and it
+            will have different styling. The remaining text
+            will have normal styling.
+        </p>
+
+
+        <h3>::selection</h3>
+
+        <p class="selection">
+            Select this text with your mouse to see the
+            selection pseudo-element.
+        </p>
+
+
+        <h3>::placeholder</h3>
+
+        <input class="placeholder"
+               type="text"
+               placeholder="My placeholder is styled">
+
+
+        <h3>::marker</h3>
+
+        <ul class="marker">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ul>
+
+
+        <h3>::file-selector-button</h3>
+
+        <input type="file">
+
+    </section>
+
+</body>
+</html>
