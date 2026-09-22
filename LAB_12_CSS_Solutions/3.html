@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Complete Gradient Demo</title>
+
+<style>
+body{
+    font-family: Arial;
+    background:#f4f4f4;
+}
+
+.container{
+    display:grid;
+    grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+    gap:15px;
+    padding:20px;
+}
+
+.box{
+    height:120px;
+    color:white;
+    font-weight:bold;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:8px;
+}
+
+/* ========================= */
+/* LINEAR KEYWORD DIRECTIONS */
+/* ========================= */
+
+.to-top{ background:linear-gradient(to top, red, blue); }
+.to-bottom{ background:linear-gradient(to bottom, red, blue); }
+.to-left{ background:linear-gradient(to left, red, blue); }
+.to-right{ background:linear-gradient(to right, red, blue); }
+
+.to-top-left{ background:linear-gradient(to top left, red, blue); }
+.to-top-right{ background:linear-gradient(to top right, red, blue); }
+.to-bottom-left{ background:linear-gradient(to bottom left, red, blue); }
+.to-bottom-right{ background:linear-gradient(to bottom right, red, blue); }
+
+/* ========================= */
+/* ANGLE BASED */
+/* ========================= */
+
+.deg0{ background:linear-gradient(0deg, red, yellow); }
+.deg45{ background:linear-gradient(45deg, red, yellow); }
+.deg90{ background:linear-gradient(90deg, red, yellow); }
+.deg180{ background:linear-gradient(180deg, red, yellow); }
+
+/* ========================= */
+/* MULTIPLE COLOR STOPS */
+/* ========================= */
+
+.multi{ background:linear-gradient(to right, red, orange, yellow, green, blue); }
+
+.percent{
+    background:linear-gradient(to right,
+    red 20%, yellow 40%, green 60%, blue 80%);
+}
+
+/* ========================= */
+/* REPEATING LINEAR */
+/* ========================= */
+
+.repeat-linear{
+    background:repeating-linear-gradient(
+        45deg,
+        red,
+        red 10px,
+        yellow 10px,
+        yellow 20px
+    );
+}
+
+
+</style>
+</head>
+
+<body>
+
+<h2 style="text-align:center;">Complete CSS Gradient Demo</h2>
+
+<div class="container">
+
+<!-- Linear Directions -->
+<div class="box to-top">to top</div>
+<div class="box to-bottom">to bottom</div>
+<div class="box to-left">to left</div>
+<div class="box to-right">to right</div>
+<div class="box to-top-left">to top left</div>
+<div class="box to-top-right">to top right</div>
+<div class="box to-bottom-left">to bottom left</div>
+<div class="box to-bottom-right">to bottom right</div>
+
+<!-- Angle -->
+<div class="box deg0">0deg</div>
+<div class="box deg45">45deg</div>
+<div class="box deg90">90deg</div>
+<div class="box deg180">180deg</div>
+
+<!-- Multi Color -->
+<div class="box multi">Multiple Colors</div>
+<div class="box percent">Color Stops %</div>
+
+<!-- Repeating Linear -->
+<div class="box repeat-linear">Repeating Linear</div>
+
+
+
+</div>
+
+</body>
+</html>

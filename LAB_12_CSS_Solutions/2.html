@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Gradient Demo</title>
+<style>
+
+body{
+    font-family: Arial;
+    background:#f2f2f2;
+    text-align:center;
+}
+
+.box{
+    width:300px;
+    height:150px;
+    margin:20px auto;
+    border-radius:10px;
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-weight:bold;
+}
+
+/* ========================= */
+/* ===== LINEAR GRADIENTS === */
+/* ========================= */
+
+/* 1. Basic Linear Gradient (Top to Bottom default) */
+.linear1{
+    background: linear-gradient(red, blue);
+}
+
+/* 2. Direction: Left to Right */
+.linear2{
+    background: linear-gradient(to right, red, blue);
+}
+
+/* 3. Direction: Diagonal */
+.linear3{
+    background: linear-gradient(to bottom right, red, yellow);
+}
+
+/* 4. Angle Based */
+.linear4{
+    background: linear-gradient(45deg, purple, pink);
+}
+
+/* 5. Multiple Color Stops */
+.linear5{
+    background: linear-gradient(to right, red, orange, yellow, green, blue);
+}
+
+/* 6. Color Stop Percentage Control */
+.linear6{
+    background: linear-gradient(to right, red 10%, yellow 50%, green 90%);
+}
+
+/* 7. Transparent Gradient */
+.linear7{
+    background: linear-gradient(to right, rgba(255,0,0,1), rgba(255,0,0,0));
+}
+
+/* 8. Repeating Linear Gradient */
+.linear8{
+    background: repeating-linear-gradient(
+        45deg,
+        black,
+        black 10px,
+        white 10px,
+        white 20px
+    );
+}
+
+
+/* ========================= */
+/* ===== RADIAL GRADIENTS === */
+/* ========================= */
+
+/* 9. Basic Radial Gradient */
+.radial1{
+    background: radial-gradient(red, blue);
+}
+
+/* 10. Circle Shape */
+.radial2{
+    background: radial-gradient(circle, red, yellow);
+}
+
+/* 11. Ellipse Shape */
+.radial3{
+    background: radial-gradient(ellipse, purple, pink);
+}
+
+/* 12. Position Control */
+.radial4{
+    background: radial-gradient(circle at top left, red, blue);
+}
+
+/* 13. Closest-side */
+.radial5{
+    background: radial-gradient(circle closest-side, red, yellow);
+}
+
+/* 14. Farthest-side */
+.radial6{
+    background: radial-gradient(circle farthest-side, red, yellow);
+}
+
+/* 15. Closest-corner */
+.radial7{
+    background: radial-gradient(circle closest-corner, red, green);
+}
+
+/* 16. Farthest-corner (default) */
+.radial8{
+    background: radial-gradient(circle farthest-corner, red, green);
+}
+
+/* 17. Repeating Radial Gradient */
+.radial9{
+    background: repeating-radial-gradient(
+        circle,
+        red,
+        red 10px,
+        yellow 10px,
+        yellow 20px
+    );
+}
+
+</style>
+</head>
+<body>
+
+<h2>LINEAR GRADIENTS</h2>
+
+<div class="box linear1">Basic</div>
+<div class="box linear2">Left → Right</div>
+<div class="box linear3">Diagonal</div>
+<div class="box linear4">Angle 45deg</div>
+<div class="box linear5">Multiple Colors</div>
+<div class="box linear6">Color Stops</div>
+<div class="box linear7">Transparent</div>
+<div class="box linear8">Repeating</div>
+
+<h2>RADIAL GRADIENTS</h2>
+
+<div class="box radial1">Basic</div>
+<div class="box radial2">Circle</div>
+<div class="box radial3">Ellipse</div>
+<div class="box radial4">Position</div>
+<div class="box radial5">Closest Side</div>
+<div class="box radial6">Farthest Side</div>
+<div class="box radial7">Closest Corner</div>
+<div class="box radial8">Farthest Corner</div>
+<div class="box radial9">Repeating</div>
+
+</body>
+</html>

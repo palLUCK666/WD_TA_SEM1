@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gradient Demonstration</title>
+
+<style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background: #f8f9fc;
+      padding: 20px;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    /* Row container (Holds 5 cards in a row) */
+    .row {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      margin-bottom: 30px;
+    }
+
+    .card {
+      width: 150px;
+      height: 180px;
+      border-radius: 12px;
+      color: #fff;
+      font-weight: bold;
+      position: relative;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+      transition: transform 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+    }
+
+    .card p {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      padding: 10px 0;
+      background: #fff;
+      color: #555;
+      font-size: 14px;
+      border-bottom-left-radius: 12px;
+      border-bottom-right-radius: 12px;
+      margin: 0;
+    }
+</style>
+
+</head>
+<body>
+
+<h1>CSS Gradient Demonstration</h1>
+
+<!-- ROW 1 -->
+<div class="row">
+ <div class="card" style="background: linear-gradient(135deg, #FCE38A, #F38181);">
+    <p>#FCE38A<br>#F38181</p>
+  </div>
+
+  <div class="card" style="background: linear-gradient(135deg, #F54EA2, #FF7676);">
+    <p>#F54EA2<br>#FF7676</p>
+  </div>
+
+  <div class="card" style="background: linear-gradient(135deg, #17EAD9, #6078EA);">
+    <p>#17EAD9<br>#6078EA</p>
+  </div>
+
+  <div class="card" style="background: linear-gradient(135deg, #622774, #C53364);">
+    <p>#622774<br>#C53364</p>
+  </div>
+
+  <div class="card" style="background: linear-gradient(135deg, #7117EA, #EA6060);">
+    <p>#7117EA<br>#EA6060</p>
+  </div>
+</div>
+
+<!-- ROW 2 -->
+<div class="row">
+  <div class="card" style="background: linear-gradient(135deg, #42E695, #3BB2B8);">
+    <p>#42E695<br>#3BB2B8</p>
+  </div>
+
+  <div class="card" style="background: linear-gradient(135deg, #F02FC2, #6094EA);">
+    <p>#F02FC2<br>#6094EA</p>
+  </div>
+
+  <div class="card" style="background: linear-gradient(135deg, #65799B, #5E2563);">
+    <p>#65799B<br>#5E2563</p>
+  </div>
+
+  <div class="card" style="background: linear-gradient(135deg, #184E68, #57CA85);">
+    <p>#184E68<br>#57CA85</p>
+  </div>
+
+  <div class="card" style="background: linear-gradient(135deg, #5B247A, #1BCEDF);">
+    <p>#5B247A<br>#1BCEDF</p>
+  </div>
+</div>
+
+<!-- ROW 3 -->
+<div class="row">
+   <div class="card" style="background: linear-gradient(135deg, #74276C, #FD8263);">
+    <p>#74276C<br>#FD8263</p>
+  </div>
+
+  <div class="card" style="background: linear-gradient(135deg, #274B74, #E963FD);">
+    <p>#274B74<br>#E963FD</p>
+  </div>
+
+  <div class="card" style="background: linear-gradient(135deg, #879AF2, #FAD000);">
+    <p>#879AF2<br>#FAD000</p>
+  </div>
+
+  <div class="card" style="background: linear-gradient(135deg, #8929AD, #43B7B8);">
+    <p>#8929AD<br>#43B7B8</p>
+  </div>
+
+  <div class="card" style="background: linear-gradient(135deg, #276174, #63FDD8);">
+    <p>#276174<br>#63FDD8</p>
+  </div>
+</div>
+
+<!-- ROW 4 -->
+<div class="row">
+    <div class="card" style="background: linear-gradient(135deg, #574BCD, #41E975);">
+    <p>#574BCD<br>#41E975</p>
+  </div>
+
+  <div class="card" style="background: linear-gradient(135deg, #363553, #E845B8);">
+    <p>#363553<br>#E845B8</p>
+  </div>
+
+  <div class="card" style="background: linear-gradient(135deg, #5C2774, #637FFD);">
+    <p>#5C2774<br>#637FFD</p>
+  </div>
+
+  <div class="card" style="background: linear-gradient(135deg, #EA5A6F, #FCCF3A);">
+    <p>#EA5A6F<br>#FCCF3A</p>
+  </div>
+
+  <div class="card" style="background: linear-gradient(135deg, #F17B41, #CD4BC9);">
+    <p>#F17B41<br>#CD4BC9</p>
+  </div>
+</div>
+
+</body>
+</html>

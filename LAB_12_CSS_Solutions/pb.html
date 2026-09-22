@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body{
+            background-color: #050b4f;
+        }
+
+        .content{
+            width: fit-content;   /* auto width, no overflow */
+            height: auto;
+            padding-top: 40px;
+            margin: 0 auto;       /* CENTERED without scroll */
+        }
+
+        /* Global settings */
+        .content div{
+            float: left;
+            width: 150px;
+            height: 100px;
+            border-radius: 20px;
+            margin: 20px 40px;
+        }
+
+        /* Creates 3-column layout */
+        .content div:nth-child(3n+1){
+            clear: left;
+        }
+
+        /* -------------- Your Gradients -------------- */
+        .linear1{  background-image: linear-gradient(to top left,#05668d,#028090,#00a896,#02c39a,#f0f3bd); }
+        .linear2{  background-image: linear-gradient(to top left,#004b23,#006400,#007200,#008000,#38b000,#70e000,#9ef01a,#ccff33); }
+        .linear3{  background-image: linear-gradient(to top right,#f4e409,#eeba0b,#c36f09,#a63c06,#710000); }
+
+        .linear4{  background-image: linear-gradient(to top left,#306b34,#1c5253,#f3ffc6,#c3eb78,#b6174b); }
+        .linear5{  background-image: linear-gradient(to top right,#d7dedc,#cfcfcd,#9a879d,#7a3b69,#563440); }
+        .linear6{  background-image: linear-gradient(to top right,#f9dbbd,#ffa5ab,#da627d,#a53860,#450920); }
+
+        .linear7{  background-image: linear-gradient(to top right,#0b0033,#370031,#832232,#ce8964,#eaf27c); }
+        .linear8{  background-image: linear-gradient(to top right,#130303,#2d080a,#7c3626,#f5853f,#ffcdbc); }
+        .linear9{  background-image: linear-gradient(to top right,#0d1f22,#264027,#3c5233,#6f732f,#b38a58); }
+
+        .linear10{ background-image: linear-gradient(to top right,#f72585,#b5179e,#7209b7,#560bad,#480ca8,#3a0ca3,#3f37c9,#4361ee,#4895ef,#4cc9f0); }
+        .linear11{ background-image: linear-gradient(to top right,#cdb4db,#ffc8dd,#ffafcc,#bde0fe,#a2d2ff); }
+        .linear12{ background-image: linear-gradient(to top right,#2b2d42 25%,#8d99ae 40%,#edf2f4 45%,#ef233c 70%,#d90429 78%); }
+
+        .linear13{ background-image: linear-gradient(to top right,#000814,#001d3d,#003566,#ffc300,#ffd60a); }
+        .linear14{ background-image: linear-gradient(to top right,#0b090a,#161a1d,#660708,#a4161a,#ba181b,#e5383b); }
+        .linear15{ background-image: linear-gradient(to top right,#c9184a,#ff4d6d,#ff758f,#ff8fa3,#ffb3c1,#ffccd5,#fff0f3); }
+
+    </style>
+</head>
+<body>
+
+   <div class="content">
+
+    <div class="linear1"></div>
+    <div class="linear2"></div>
+    <div class="linear3"></div>
+
+    <div class="linear4"></div>
+    <div class="linear5"></div>
+    <div class="linear6"></div>
+
+    <div class="linear7"></div>
+    <div class="linear8"></div>
+    <div class="linear9"></div>
+
+    <div class="linear10"></div>
+    <div class="linear11"></div>
+    <div class="linear12"></div>
+
+    <div class="linear13"></div>
+    <div class="linear14"></div>
+    <div class="linear15"></div>
+
+   </div>
+
+</body>
+</html>

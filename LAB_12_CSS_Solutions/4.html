@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Complete Radial Gradient Demo</title>
+
+<style>
+body{
+    font-family: Arial;
+    background:#f4f4f4;
+}
+
+.container{
+    display:grid;
+    grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+    gap:15px;
+    padding:20px;
+}
+
+.box{
+    height:120px;
+    color:white;
+    font-weight:bold;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:8px;
+}
+
+/* ======================= */
+/* POSITION KEYWORDS */
+/* ======================= */
+
+.center{ background:radial-gradient(circle at center, red, yellow); }
+.top{ background:radial-gradient(circle at top, red, yellow); }
+.bottom{ background:radial-gradient(circle at bottom, red, yellow); }
+.left{ background:radial-gradient(circle at left, red, yellow); }
+.right{ background:radial-gradient(circle at right, red, yellow); }
+
+.top-left{ background:radial-gradient(circle at top left, red, yellow); }
+.top-right{ background:radial-gradient(circle at top right, red, yellow); }
+.bottom-left{ background:radial-gradient(circle at bottom left, red, yellow); }
+.bottom-right{ background:radial-gradient(circle at bottom right, red, yellow); }
+
+/* ======================= */
+/* PERCENTAGE POSITIONS */
+/* ======================= */
+
+.percent{
+    background:radial-gradient(circle at 30% 40%, red, yellow);
+}
+
+/* ======================= */
+/* LENGTH POSITIONS */
+/* ======================= */
+
+.length{
+    background:radial-gradient(circle at 50px 50px, red, yellow);
+}
+
+/* ======================= */
+/* SHAPES */
+/* ======================= */
+
+.circle{
+    background:radial-gradient(circle, blue, white);
+}
+
+.ellipse{
+    background:radial-gradient(ellipse, blue, white);
+}
+
+/* ======================= */
+/* SIZE KEYWORDS */
+/* ======================= */
+
+.closest-side{
+    background:radial-gradient(circle closest-side, red, yellow);
+}
+
+.farthest-side{
+    background:radial-gradient(circle farthest-side, red, yellow);
+}
+
+.closest-corner{
+    background:radial-gradient(circle closest-corner, red, yellow);
+}
+
+.farthest-corner{
+    background:radial-gradient(circle farthest-corner, red, yellow);
+}
+
+/* ======================= */
+/* REPEATING */
+/* ======================= */
+
+.repeat{
+    background:repeating-radial-gradient(
+        circle,
+        red,
+        red 10px,
+        yellow 10px,
+        yellow 20px
+    );
+}
+
+</style>
+</head>
+
+<body>
+
+<h2 style="text-align:center;">All Radial Gradient Variations</h2>
+
+<div class="container">
+
+<!-- Position Keywords -->
+<div class="box center">center</div>
+<div class="box top">top</div>
+<div class="box bottom">bottom</div>
+<div class="box left">left</div>
+<div class="box right">right</div>
+<div class="box top-left">top left</div>
+<div class="box top-right">top right</div>
+<div class="box bottom-left">bottom left</div>
+<div class="box bottom-right">bottom right</div>
+
+<!-- Percentage -->
+<div class="box percent">30% 40%</div>
+
+<!-- Length -->
+<div class="box length">50px 50px</div>
+
+<!-- Shapes -->
+<div class="box circle">Circle</div>
+<div class="box ellipse">Ellipse</div>
+
+<!-- Sizes -->
+<div class="box closest-side">Closest Side</div>
+<div class="box farthest-side">Farthest Side</div>
+<div class="box closest-corner">Closest Corner</div>
+<div class="box farthest-corner">Farthest Corner</div>
+
+<!-- Repeating -->
+<div class="box repeat">Repeating</div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.box{
+  height:150px;
+  margin:10px;
+  color:white;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-weight:bold;
+}
+
+/* Linear */
+.linear-basic{ background:linear-gradient(red,yellow); }
+.linear-direction{ background:linear-gradient(to right,blue,green); }
+.linear-angle{ background:linear-gradient(45deg,purple,pink); }
+.linear-repeat{ background:repeating-linear-gradient(45deg,red,red 10px,yellow 10px,yellow 20px); }
+
+/* Radial */
+.radial-basic{ background:radial-gradient(red,yellow); }
+.radial-circle{ background:radial-gradient(circle,blue,white); }
+.radial-position{ background:radial-gradient(circle at top left,green,yellow); }
+.radial-repeat{ background:repeating-radial-gradient(circle,red,red 10px,yellow 10px,yellow 20px); }
+
+</style>
+</head>
+<body>
+
+<div class="box linear-basic">Linear Basic</div>
+<div class="box linear-direction">Linear Direction</div>
+<div class="box linear-angle">Linear Angle</div>
+<div class="box linear-repeat">Repeating Linear</div>
+
+<div class="box radial-basic">Radial Basic</div>
+<div class="box radial-circle">Radial Circle</div>
+<div class="box radial-position">Radial Position</div>
+<div class="box radial-repeat">Repeating Radial</div>
+
+</body>
+</html>
