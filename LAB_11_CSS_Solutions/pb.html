@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Darshan University</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: "Times New Roman", serif;
+        }
+
+        /* ================= HEADER ================= */
+
+        .header {
+            width: 100%;
+            height: 105px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5px;
+            border-bottom: 2px solid #ddd;
+        }
+
+        .header img {
+            height: 90px;
+            width: 110px;
+            object-fit: cover;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+            margin-right: 120px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: darkblue;
+            font-size: 27px;
+        }
+
+        /* ================= MAIN CONTENT ================= */
+
+        .content {
+            width: 100%;
+            display: flex;
+            min-height: 535px;
+        }
+
+        /* ================= SIDEBAR ================= */
+
+        .aside {
+            width: 25%;
+            background-color: red;
+            color: black;
+            text-align: center;
+        }
+
+        .aside p {
+            font-size: 25px;
+            margin: 0;
+            padding: 8px;
+            border-bottom: 2px solid yellow;
+        }
+
+        /* ================= MAIN DATA ================= */
+
+        .mainData {
+            width: 75%;
+            border: 1px dotted black;
+            padding: 5px;
+        }
+
+        .row1,
+        .row2 {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .dataBox {
+            width: 125px;
+            margin: 5px;
+            font-size: 15px;
+        }
+
+        .dataBox img {
+            width: 120px;
+            height: 100px;
+            object-fit: cover;
+        }
+
+        /* ================= FOOTER ================= */
+
+        .footer {
+            width: 100%;
+            height: 65px;
+            background-color: blue;
+            color: white;
+            text-align: center;
+            font-size: 32px;
+            padding: 12px;
+        }
+
+
+        /* =================================================
+           TABLET
+           ================================================= */
+
+        @media screen and (min-width: 481px) and (max-width: 768px) {
+
+            .header {
+                height: auto;
+                padding: 10px;
+            }
+
+            .header img {
+                height: 70px;
+                width: 90px;
+            }
+
+            .nav-links {
+                margin-right: 10px;
+                gap: 12px;
+            }
+
+            .nav-links a {
+                font-size: 20px;
+            }
+
+            .aside {
+                width: 30%;
+            }
+
+            .mainData {
+                width: 70%;
+            }
+
+            .aside p {
+                font-size: 20px;
+                padding: 12px 5px;
+            }
+
+            .dataBox {
+                width: 110px;
+                margin: 5px;
+                font-size: 13px;
+            }
+
+            .dataBox img {
+                width: 105px;
+                height: 85px;
+            }
+
+            .footer {
+                font-size: 24px;
+            }
+        }
+
+
+        /* =================================================
+           MOBILE
+           ================================================= */
+
+        @media screen and (max-width: 480px) {
+
+            .header {
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                padding: 10px;
+            }
+
+            .header img {
+                height: 70px;
+                width: 90px;
+            }
+
+            .nav-links {
+                margin: 10px 0;
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+                text-align: center;
+            }
+
+            .nav-links a {
+                font-size: 20px;
+            }
+
+            .content {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .aside {
+                width: 100%;
+            }
+
+            .aside p {
+                font-size: 20px;
+                padding: 8px;
+            }
+
+            .mainData {
+                width: 100%;
+                padding: 5px;
+            }
+
+            .row1,
+            .row2 {
+                justify-content: center;
+            }
+
+            .dataBox {
+                width: 110px;
+                margin: 8px;
+                text-align: center;
+                font-size: 13px;
+            }
+
+            .dataBox img {
+                width: 100px;
+                height: 80px;
+            }
+
+            .footer {
+                height: auto;
+                font-size: 18px;
+                padding: 10px;
+            }
+        }
+
+
+        /* =================================================
+           LARGE SCREEN
+           ================================================= */
+
+        @media screen and (min-width: 1200px) {
+
+            .dataBox {
+                margin: 5px;
+            }
+
+            .nav-links {
+                margin-right: 120px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <div class="header">
+
+        <img src="https://media.wired.com/photos/59265fd2af95806129f4f397/master/w_2560%2Cc_limit/MicrosoftVista-4x3.jpg"
+            alt="Logo">
+
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            <a href="#">Login</a>
+        </div>
+
+    </div>
+
+
+    <!-- ================= CONTENT ================= -->
+
+    <div class="content">
+
+        <!-- SIDEBAR -->
+
+        <div class="aside">
+
+            <p>Sidebar</p>
+            <p>Home</p>
+            <p>Placement</p>
+            <p>Recruitment</p>
+            <p>Faculty</p>
+            <p>News</p>
+
+        </div>
+
+
+        <!-- MAIN DATA -->
+
+        <div class="mainData">
+
+            <div class="row1">
+
+                <div class="dataBox">
+                    <img src="https://i.pinimg.com/736x/7b/d7/45/7bd745f60fd3691f403cb9bd2c9c3767.jpg">
+                    <br>
+                    Arjun Bala
+                    <br>
+                    BE,MTech(CSE)
+                </div>
+
+                <div class="dataBox">
+                    <img src="https://i.redd.it/xm2d6biuvmk61.jpg">
+                    <br>
+                    Firoz Shreyasiya
+                    <br>
+                    BE,ME
+                </div>
+
+            </div>
+
+
+            <div class="row2">
+
+                <div class="dataBox">
+                    <img src="https://images2.alphacoders.com/124/1245878.jpg">
+                    <br>
+                    Harsh Kansagra
+                    <br>
+                    L&T PVT LTD
+                    <br>
+                    4.5 Lac
+                </div>
+
+                <div class="dataBox">
+                    <img src="https://c4.wallpaperflare.com/wallpaper/974/565/254/windows-11-windows-10-minimalism-hd-wallpaper-preview.jpg">
+                    <br>
+                    Shyam Kantesariya
+                    <br>
+                    Tata Consultancy Service
+                    <br>
+                    3.2 Lac
+                </div>
+
+                <div class="dataBox">
+                    <img src="https://c4.wallpaperflare.com/wallpaper/448/119/665/windows-10-macos-colorful-hd-wallpaper-preview.jpg">
+                    <br>
+                    Jeet Dhamecha
+                    <br>
+                    Reliance Industry LTD
+                    <br>
+                    5.0 Lac
+                </div>
+
+                <div class="dataBox">
+                    <img src="https://c4.wallpaperflare.com/wallpaper/426/244/934/minimalism-colorful-windows-10-logo-gradient-hd-wallpaper-preview.jpg">
+                    <br>
+                    Harsh Maniar
+                    <br>
+                    Reliance Industry LTD
+                    <br>
+                    5.0 Lac
+                </div>
+
+                <div class="dataBox">
+                    <img src="https://4kwallpapers.com/images/wallpapers/windows-11-minimal-windows-logo-5k-8k-7680x4320-7381.png">
+                    <br>
+                    Anand Dabhi
+                    <br>
+                    BSNL
+                    <br>
+                    5.5 Lac
+                </div>
+
+                <div class="dataBox">
+                    <img src="https://c4.wallpaperflare.com/wallpaper/850/221/294/windows-10-abstract-landscape-hd-wallpaper-preview.jpg">
+                    <br>
+                    Shyam Kantesariya
+                    <br>
+                    Tata Consultancy Services
+                    <br>
+                    3.2 Lac
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <div class="footer">
+        &copy; Darshan University-Rajkot
+    </div>
+
+</body>
+
+</html>

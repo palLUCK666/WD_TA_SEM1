@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 13 - A</title>
+    <style>
+        .page {
+            background-color: skyblue;
+            height: 480px;
+            padding: 15px;
+            font-size: large;
+        }
+
+        .header {
+            background-color: rgb(131, 3, 77);
+            color: white;
+            padding: 2px;
+        }
+
+        .content {
+            background-color: rgb(231, 156, 6);
+            height: 85%;
+            padding: 5px;
+        }
+
+        .entry {
+            float: left;
+            width: 55%;
+        }
+
+        .e1 {
+            background-color: black;
+            color: white;
+            margin: 15px;
+            height: 33px;
+        }
+
+        .slider {
+            background-color: black;
+            color: white;
+            height: 25%;
+            width: 30%;
+            float: right;
+            padding: 10px;
+            margin: 20px;
+        }
+
+        .du {
+            clear: both;
+            background-color: blue;
+            color: white;
+        }
+
+        @media screen and (max-width: 470px) {
+            .entry {
+                width: 100%;
+            }
+
+            .e1 {
+                background-color: black;
+                color: white;
+                margin: 15px;
+                height: 33px;
+                width: 90%;
+            }
+
+            .slider {
+                background-color: black;
+                color: white;
+                height: 25%;
+                width: 85%;
+                padding: 10px;
+                margin: 20px;
+            }
+        }
+
+        @media screen and (min-width: 800px) {
+            .content {
+                background-color: rgb(231, 107, 6);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page">
+        Page
+        <div class="header">
+            Header
+        </div>
+        <div class="content">
+            <div style="padding: 10px;">
+                Content
+            </div>
+            <div class="entry">
+                <div class="e1">
+                    Entry
+                </div>
+                <div class="e1">
+                    Entry
+                </div>
+                <div class="e1">
+                    Entry
+                </div>
+            </div>
+            <div class="slider">
+                Slider
+            </div>
+        </div>
+        <div class="du">
+            &copy;Darshan University-Rajkot
+        </div>
+    </div>
+</body>
+
+</html>
