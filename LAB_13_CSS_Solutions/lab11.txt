@@ -1,0 +1,12 @@
+Summary of Pseudo-Classes and Pseudo-Elements Used
+
+| Type           | Selector             |
+| -------------- | -------------------- |
+| Link States    | `:link`, `:visited`  |
+| Hover Effect   | `:hover`             |
+| Focus Effect   | `:focus`             |
+| Active State   | `:active`            |
+| Validation     | `:valid`, `:invalid` |
+| First Line     | `::first-line`       |
+| First Letter   | `::first-letter`     |
+| Text Selection | `::selection`        |

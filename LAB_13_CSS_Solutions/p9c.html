@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+input:valid {
+    border: 3px solid green;
+}
+
+input:invalid {
+    border: 3px solid red;
+}
+</style>
+</head>
+<body>
+
+<h2>Validation Example</h2>
+
+<form>
+    Email:
+    <input type="email" required>
+    <br><br>
+
+    Phone:
+    <input type="tel" pattern="[0-9]{10}" required>
+    <br><br>
+
+    <input type="submit">
+</form>
+
+</body>
+</html>
