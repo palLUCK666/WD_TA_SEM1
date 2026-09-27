@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 16 - A</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-size: large;
+        }
+
+        header {
+            width: 100%;
+            height: 32vh;
+            background-color: gray;
+            border-bottom: 7px solid green;
+        }
+
+        .shopify {
+            width: 140px;
+            height: 120px;
+            background-color: white;
+            margin: 10px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: right;
+            gap: 20px;
+            position: absolute;
+            top: 4%;
+            width: 96%;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        header p {
+            margin: 10px;
+            font-size: 1.1rem;
+            color: aqua;
+        }
+
+        .main {
+            position: relative;
+            margin: 20px 0;
+            padding: 20px;
+            border: 3px solid green;
+        }
+
+        .windows {
+            width: 400px;
+            height: 270px;
+        }
+
+        .main p {
+            max-width: 850px;
+            position: absolute;
+            top: 10%;
+            left: 40%;
+            font-size: 1.1rem;
+        }
+
+        button {
+            position: absolute;
+            top: 78%;
+            left: 40%;
+            border-radius: 30px;
+            font-size: 1.1rem;
+            padding: 15px 25px;
+            background-color: rgb(164, 231, 231);
+        }
+
+        h4 {
+            max-width: 800px;
+            font-size: 1.1rem;
+        }
+
+        .body {
+            position: relative;
+            max-width: 800px;
+            font-size: 1.1rem;
+        }
+
+        .right {
+            position: absolute;
+            top: 0%;
+            left: 110%;
+        }
+
+        .rightmost {
+            position: absolute;
+            top: 20%;
+            left: 135%;
+            width: 400px;
+        }
+
+        .imgs {
+            display: block;
+            height: 100px;
+            width: 170px;
+            margin: 50px auto 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div>
+            <img src="https://www.pngall.com/wp-content/uploads/13/Shopify-Logo-PNG-Image-300x225.png" alt=""
+                class="shopify">
+        </div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Services</a>
+            <a href="#">Gallery</a>
+            <a href="#">Company</a>
+            <a href="#">Contact</a>
+        </nav>
+        <p>This is a Home Page</p>
+    </header>
+
+    <section class="main">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTs6Y3qtYwe5jfbwdebiCNe9JzXNrpCNm8OUQ&s" alt=""
+            class="windows">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque voluptas ullam cupiditate neque, nesciunt
+            delectus fugiat quasi ea maiores aliquid? Tempore dolore praesentium adipisci rerum corporis quos velit
+            nulla placeat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia deserunt eos repellat rerum
+            maiores reiciendis porro tenetur repellendus est modi eligendi in hic, blanditiis placeat, libero sit animi
+            omnis ut! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt numquam excepturi sint facilis
+            sapiente dicta laborum optio accusantium praesentium, animi voluptatem voluptas, deserunt sit, nisi atque
+            molestiae quisquam voluptate deleniti!</p>
+        <button>Read More</button>
+    </section>
+    <section class="body">
+        <h2>Welcome to our WEBSITE!</h2>
+        <h4>This is a professional XHTML/CSS layout provided by TemplateMo.com for free of charge. You can use this
+            template for any purpose. Credit goes to Free.photos for photos.</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque voluptas ullam cupiditate neque, nesciunt
+            delectus fugiat quasi ea maiores aliquid? Tempore dolore praesentium adipisci rerum corporis quos velit
+            nulla placeat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia deserunt eos repellat rerum
+            maiores reiciendis porro tenetur repellendus est modi eligendi in hic, blanditiis placeat, libero sit animi
+            omnis ut!</p>
+        <ul>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo dicta ab voluptatum, autem quod
+                libero corporis sapiente officiis labore! Aut quibusdam temporibus, sit libero in deserunt quia tempora
+                labore aliquam?</li>
+            <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam praesentium doloribus aliquam quis
+                suscipit sunt quod harum sint, aliquid, maxime inventore expedita autem unde exercitationem quidem esse
+                delectus illum error.</li>
+        </ul>
+        <p style="margin-left: 40px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque voluptas ullam
+            cupiditate neque, nesciunt
+            delectus fugiat quasi ea maiores aliquid? Tempore dolore praesentium adipisci rerum corporis quos velit
+            nulla placeat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia deserunt eos repellat rerum
+            maiores reiciendis porro tenetur repellendus est modi eligendi in hic, blanditiis placeat, libero sit animi
+            omnis ut!</p>
+        <div class="right">
+            <h4>Latest News</h4>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRg0M2wGAPy1QMnUp-X3Vs0DpZXseJWbhdIgw&s"
+                alt="" class="imgs">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRg0M2wGAPy1QMnUp-X3Vs0DpZXseJWbhdIgw&s"
+                alt="" class="imgs">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRg0M2wGAPy1QMnUp-X3Vs0DpZXseJWbhdIgw&s"
+                alt="" class="imgs">
+        </div>
+        <div class="rightmost">
+            <div>OCT 29, 2024</div>
+            <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit possimus cumque architecto,
+                exercitationem quidem, voluptatem iste, dicta corporis tempora veritatis veniam earum sit numquam
+                mollitia quia qui est nemo nesciunt!</div><br>
+
+            <div>OCT 29, 2024</div>
+            <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit possimus cumque architecto,
+                exercitationem quidem, voluptatem iste, dicta corporis tempora veritatis veniam earum sit numquam
+                mollitia quia qui est nemo nesciunt!</div><br>
+
+            <div>OCT 29, 2024</div>
+            <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit possimus cumque architecto,
+                exercitationem quidem, voluptatem iste, dicta corporis tempora veritatis veniam earum sit numquam
+                mollitia quia qui est nemo nesciunt!</div>
+        </div>
+    </section>
+</body>
+
+</html>

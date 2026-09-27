@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 16 - B</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #333;
+            color: white;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: black;
+            padding: 15px 20px;
+        }
+
+        .navbar .logo {
+            display: flex;
+            align-items: center;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .navbar .menu {
+            display: flex;
+            gap: 20px;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .download-btn {
+            background: #0099ff;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 20px;
+        }
+
+        .social-icons a {
+            color: white;
+            font-size: 18px;
+            text-decoration: none;
+        }
+
+        .social-icons a:hover {
+            color: #0099ff;
+        }
+
+        .header {
+            text-align: right;
+            background: url('https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTX6ayUGbGfAMvnRk_bsYUo55z3W83f3k_Cva4emVdTYae155E1') no-repeat center center/cover;
+            margin: 30px 100px 0px 100px;
+            padding: 100px 20px;
+            font-size: 3rem;
+            font-weight: bold;
+        }
+
+        .events-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 40px;
+        }
+
+        .event-card {
+            background: white;
+            color: black;
+            border-radius: 8px;
+            width: 260px;
+            overflow: hidden;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .event-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .event-card .info {
+            padding: 15px;
+        }
+
+        .event-card h3 {
+            margin: 10px 0;
+            font-size: 18px;
+        }
+
+        .event-card p {
+            font-size: 14px;
+            margin: 5px 0;
+        }
+
+        .event-card .event-date {
+            font-size: 12px;
+            color: gray;
+        }
+
+        .see-more-btn {
+            display: block;
+            margin: 10px auto;
+            background: #0099ff;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            text-decoration: none;
+            width: 80%;
+        }
+
+        .see-more-btn:hover {
+            background: #007acc;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="navbar">
+        <div class="logo">🎸 SoundAMP</div>
+        <div class="menu">
+            <a href="#">HTML Templates</a>
+            <a href="#">More HTML Templates</a>
+            <a href="#" class="download-btn">DOWNLOAD NOW</a>
+        </div>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-pinterest"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+    </div>
+
+    <div class="header">ALL EVENT</div>
+
+    <div class="events-container">
+
+        <div class="event-card">
+            <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQSAP7kdkUlvYfR0CHR9ujqDNl7t1lFuqv5tgtLblN_1NpmoI_R"
+                alt="Night Laser Show">
+            <div class="info">
+                <p class="event-date">10/05/2018</p>
+                <h3>Night Laser Show</h3>
+                <p>#hip-hop #rnb #dance</p>
+                <p>We are happy to announce this special laser show.</p>
+                <a href="#" class="see-more-btn">See more...</a>
+            </div>
+        </div>
+
+        <div class="event-card">
+            <img src="https://www.musiccoasttocoast.it/wp-content/uploads/musica-6-150x150.jpg" alt="Live Music">
+            <div class="info">
+                <p class="event-date">14/05/2018</p>
+                <h3>Live Music</h3>
+                <p>#live #rock #alternative</p>
+                <p>Special event for our rock fans! Live music show.</p>
+                <a href="#" class="see-more-btn">See more...</a>
+            </div>
+        </div>
+
+        <div class="event-card">
+            <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRG6W249ft9bVKUeR1T-GnhgoO5aSbELRTfiqBylRssbX6QKwsB"
+                alt="DJ - Master Class">
+            <div class="info">
+                <p class="event-date">10/04/2018</p>
+                <h3>DJ - Master Class</h3>
+                <p>#dj #master-class</p>
+                <p>DJ WoodSmell will teach you new tricks: please sign up.</p>
+                <a href="#" class="see-more-btn">See more...</a>
+            </div>
+        </div>
+
+        <div class="event-card">
+            <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQBEtBWk80jOv4JMeR20DioVSRBBJo1oxXvAlZtXlqw76VsHKM0"
+                alt="Best Night Party">
+            <div class="info">
+                <p class="event-date">10/04/2018</p>
+                <h3>Best Night Party</h3>
+                <p>#party #club</p>
+                <p>Our traditional event: best hits all night long.</p>
+                <a href="#" class="see-more-btn">See more...</a>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
