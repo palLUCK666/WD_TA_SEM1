@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>You Don't Know JavaScript</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        body {
+            background: #eee;
+            text-align: center;
+            color: #333;
+        }
+        header {
+            background: #333;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 20px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        h1 {
+            margin: 20px 0;
+            font-size: 28px;
+            font-weight: bold;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .main {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+            align-items: center;
+            
+        }
+       
+        .content p {
+            margin: 10px 0;
+            font-size: 18px;
+        }
+
+        .content{
+            float: right;
+        }
+        button {
+            background: #ff7f50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 20px 0;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background: #ff6347;
+        }
+        
+
+        .book-cover{
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 320px;
+            border: 2px solid #102030;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            background: #ffffff;
+            flex-direction: column;
+            justify-content: space-between;
+            float: left;
+            
+        }
+        .top {
+            background: #e0e0e0;
+            padding: 10px;
+            text-align: left;
+        
+        }
+        .top h3 {
+            font-weight: bold;
+            font-size: large;
+            background-color: #102030;
+            color: #e0e0e0;
+            width:fit-content;
+
+        }
+        .quote {
+            font-size: 12px;
+            font-style: italic;
+            margin: 10px;
+            text-align: left;
+            
+        }
+        .author {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .middle{
+            height: 100px;
+        }
+        .title {
+            font-size: 32px;
+            margin-left: 100px;
+            text-transform: uppercase;
+            font-weight: bold;
+            text-align: right;
+        }
+
+        .bottom {
+            background: #f1c40f;
+            padding: 50px 0;
+            position: relative;
+            text-align: center;
+            height: 310px;
+            width: 100%;
+        }
+        .bottom h1 {
+            position: absolute;
+            transform: rotate(-90deg);
+            font-weight: bold;
+            font-size: 16px;
+            color:#f1c40f;
+            margin-top: 100px;
+            margin-left: 40px;
+            z-index: 2;
+        }
+        .js {
+            position: relative;
+            top: -35%;
+            left: 0;
+            font-size: 250px;
+            font-weight: bold;
+            color: #333;
+            width: 320px;
+        }
+
+        .footer {
+            background: #102030;
+            color: white;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#">The book series</a>
+            <a href="#">Testimonials</a>
+            <a href="#">The Author</a>
+            <a href="#">Free resources</a>
+        </nav>
+    </header>
+<h1>You don't know JavaScript</h1>
+
+<div class="main">
+
+  <div class="book-cover">
+            <div class="top">
+                    <h3>O'REILLY</h3>
+                    <div class="quote">
+                        "When you strive to comprehend your code, you create better work and become better at what you do. The code isn't just your job anymore, it's your craft. This is why I love Up & Going"<br>—JENN LUKAS, Frontend consultant
+                    </div>
+                    <div class="author">KYLE SIMPSON</div>
+            </div>
+            
+            <div class="middle">
+                    <div class="title">
+                        Complete <br> Series
+                    </div>
+            </div>
+
+            <div class="bottom">
+                <h1>YOU DON'T KNOW</h1>
+                <div class="js">JS</div>
+            </div>
+    </div>
+    
+    <div class="content">
+        <p>Don't just drift through JavaScript.</p>
+        <br>
+        <br>
+        <p>Understand how JavaScript works.</p>
+        <br>
+        <br>
+        <p>Start your journey through the bumpy side of JavaScript.</p>
+        <br>
+        <br>
+        <button>ORDER YOUR COPY NOW</button>
+    </div>
+
+
+   
+</div>
+
+<div class="footer">
+    The first ebook in the book series is absolutely free.<br>
+    <button>FIND OUT MORE ABOUT THIS OFFER</button>
+</div>
+</body>
+</html>
+
+
