@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap Grid Layout</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Header -->
+<div class="container-fluid bg-light py-3">
+    <div class="row">
+        <div class="col-md-6">
+            <img src="data:image/png;base64,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" width="50">
+        </div>
+        <div class="col-md-6 text-end">
+            <a href="#" class="text-decoration-none mx-2">Home</a>
+            <a href="#" class="text-decoration-none mx-2">About</a>
+            <a href="#" class="text-decoration-none mx-2">Services</a>
+            <a href="#" class="text-decoration-none mx-2">My Work</a>
+            <a href="#" class="text-decoration-none mx-2">Contact</a>
+        </div>
+    </div>
+</div>
+
+<!-- Hero Section -->
+<div class="container-fluid bg-secondary-subtle py-5">
+    <div class="row align-items-center">
+
+        <div class="col-md-5 text-center">
+            <img src="https://img.freepik.com/premium-vector/woman-is-engaged-her-work-laptop-warm-inviting-home-office-setting-woman-working-laptop-flat-illustration_585735-45663.jpg" class="img-fluid" width="550">
+        </div>
+
+        <div class="col-md-7">
+            <h1 class="fw-bold">Hello, I am Web Developer</h1>
+            <p class="fs-4">
+                I use HTML and CSS to convert webpage designs into beautiful
+                and efficient websites.
+            </p>
+        </div>
+
+    </div>
+</div>
+
+<!-- Programs -->
+<div class="container mt-4">
+    <div class="row text-center">
+
+        <div class="col-md-3 mb-3">
+            <div class="border border-danger p-5">
+                <h3>Program 1</h3>
+            </div>
+        </div>
+
+        <div class="col-md-3 mb-3">
+            <div class="border border-danger p-5">
+                <h3>Program 2</h3>
+            </div>
+        </div>
+
+        <div class="col-md-3 mb-3">
+            <div class="border border-danger p-5">
+                <h3>Program 3</h3>
+            </div>
+        </div>
+
+        <div class="col-md-3 mb-3">
+            <div class="border border-danger p-5">
+                <h3>Program 4</h3>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
