@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Open Admin - Page List</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+<style>
+body{
+    margin:0;
+    background:#eef1f4;
+    font-family: "Segoe UI", sans-serif;
+}
+
+/* SIDEBAR */
+.sidebar{
+    position:fixed;
+    width:260px;
+    height:100vh;
+    background:#2c3b4e;
+    color:#cfd8dc;
+}
+.sidebar .brand{
+    padding:18px;
+    text-align:center;
+    font-weight:600;
+    color:#fff;
+}
+
+/* SEARCH BAR */
+.sidebar .search{
+    position:relative;
+    padding:12px 16px;
+}
+.sidebar .search i{
+    position:absolute;
+    left:26px;
+    top:50%;
+    transform:translateY(-50%);
+    color:#9aa7b2;
+}
+.sidebar .search input{
+    padding-left:36px;
+    background:#223040;
+    border:none;
+    color:#fff;
+}
+
+/* SIDEBAR LINKS */
+.sidebar a{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:12px 22px;
+    color:#cfd8dc;
+    text-decoration:none;
+    font-size:14px;
+}
+.sidebar a span{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+.sidebar a.active,
+.sidebar a:hover{
+    background:#1f2b3a;
+    color:#fff;
+}
+
+/* MAIN */
+.main{
+    margin-left:260px;
+}
+
+/* TOP BAR */
+.topbar{
+    height:56px;
+    background:#fff;
+    padding:0 20px;
+    border-bottom:1px solid #ddd;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+/* CONTENT */
+.content{
+    padding:25px;
+}
+
+/* TABLE */
+.table th{
+    background:#f8f9fa;
+    font-size:14px;
+    padding:14px;
+}
+.table td{
+    font-size:14px;
+    padding:18px;
+    vertical-align:middle;
+}
+.selected-row{
+    background:#fff8c6;
+}
+.badge{
+    font-size:11px;
+}
+.star-blue{ color:#0d6efd; }
+.star-green{ color:#28a745; }
+
+.action i{
+    margin:0 8px;
+    cursor:pointer;
+}
+
+
+.form-check-input:checked{
+    background-color:#dc3545;
+    border-color:#dc3545;
+}
+
+/* FOOTER */
+.table-footer{
+    margin-top:40px;
+    padding-top:20px;
+    border-top:1px solid #ddd;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.page-box span{
+    padding:6px 10px;
+    border:1px solid #ccc;
+    margin-left:4px;
+}
+.page-box .active{
+    background:#0d6efd;
+    color:#fff;
+}
+
+.form-check-input[type="checkbox"]{
+    accent-color: #dc3545;
+}
+</style>
+</head>
+
+<body>
+
+<!-- SIDEBAR -->
+<div class="sidebar">
+    <div class="brand">Open Admin</div>
+
+    <div class="search">
+        <i class="bi bi-search"></i>
+        <input type="text" class="form-control form-control-sm" placeholder="Search">
+    </div>
+
+    <a href="#"><span><i class="bi bi-speedometer2"></i> Dashboard</span></a>
+    <a href="#" class="active"><span><i class="bi bi-file-earmark"></i> Pages</span></a>
+
+    <a href="#">
+        <span><i class="bi bi-person-badge"></i> Admin</span>
+        <i class="bi bi-chevron-right"></i>
+    </a>
+
+    <a href="#">
+        <span><i class="bi bi-people"></i> Helpers</span>
+        <i class="bi bi-chevron-right"></i>
+    </a>
+
+    <a href="#"><span><i class="bi bi-images"></i> Media manager</span></a>
+    <a href="#"><span><i class="bi bi-gear"></i> Config</span></a>
+    <a href="#"><span><i class="bi bi-plug"></i> Api tester</span></a>
+    <a href="#"><span><i class="bi bi-layout-text-window"></i> Page Designer</span></a>
+</div>
+
+<!-- MAIN -->
+<div class="main">
+
+<div class="topbar">
+    <i class="bi bi-list fs-4"></i>
+    <div><i class="bi bi-person-circle"></i> Administrator</div>
+</div>
+
+<div class="content">
+
+<h4>Page <small class="text-muted">List</small></h4>
+
+<div class="card">
+<table class="table table-hover mb-0 align-middle">
+<thead>
+<tr>
+    <th><input class="form-check-input" type="checkbox"></th>
+    <th>ID</th>
+    <th>title</th>
+    <th>Date <i class="bi bi-funnel"></i></th>
+    <th>Tags</th>
+    <th>Star</th>
+    <th>Created at</th>
+    <th>Updated at</th>
+    <th>Action</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+    <td><input class="form-check-input" type="checkbox"></td>
+    <td>1</td>
+    <td>Homepage</td>
+    <td>2022-06-25</td>
+    <td><span class="badge bg-success">new</span> <span class="badge bg-info">special</span></td>
+    <td><i class="bi bi-star star-blue"></i></td>
+    <td>2022-02-17 00:51:01</td>
+    <td>2022-06-25 14:30:21</td>
+    <td class="action">
+        <i class="bi bi-pencil"></i>
+        <i class="bi bi-eye"></i>
+        <i class="bi bi-trash"></i>
+        <i class="bi bi-flask"></i>
+    </td>
+</tr>
+
+<tr class="selected-row">
+    <td><input class="form-check-input" type="checkbox" checked></td>
+    <td>2</td>
+    <td>Blog</td>
+    <td>2022-06-25</td>
+    <td><span class="badge bg-success">new</span></td>
+    <td><i class="bi bi-star-fill star-green"></i></td>
+    <td>2022-06-25 14:30:33</td>
+    <td>2022-06-25 14:30:33</td>
+    <td class="action">
+        <i class="bi bi-pencil"></i>
+        <i class="bi bi-eye"></i>
+        <i class="bi bi-trash"></i>
+        <i class="bi bi-flask"></i>
+    </td>
+</tr>
+
+<tr>
+    <td><input class="form-check-input" type="checkbox"></td>
+    <td>3</td>
+    <td>About us</td>
+    <td>2022-06-25</td>
+    <td>-</td>
+    <td><i class="bi bi-star-fill star-blue"></i></td>
+    <td>2022-06-25 14:36:58</td>
+    <td>2022-06-25 14:37:40</td>
+    <td class="action">
+        <i class="bi bi-pencil"></i>
+        <i class="bi bi-eye"></i>
+        <i class="bi bi-trash"></i>
+        <i class="bi bi-flask"></i>
+    </td>
+</tr>
+
+<tr>
+    <td><input class="form-check-input" type="checkbox"></td>
+    <td>4</td>
+    <td>Contact</td>
+    <td>2022-06-25</td>
+    <td><span class="badge bg-success">code</span> <span class="badge bg-info">special</span></td>
+    <td><i class="bi bi-star-fill star-blue"></i></td>
+    <td>2022-06-25 14:37:12</td>
+    <td>2022-06-25 14:39:16</td>
+    <td class="action">
+        <i class="bi bi-pencil"></i>
+        <i class="bi bi-eye"></i>
+        <i class="bi bi-trash"></i>
+        <i class="bi bi-flask"></i>
+    </td>
+</tr>
+
+<tr>
+    <td><input class="form-check-input" type="checkbox"></td>
+    <td>5</td>
+    <td>Cases</td>
+    <td>2022-06-25</td>
+    <td>-</td>
+    <td><i class="bi bi-star star-blue"></i></td>
+    <td>2022-06-25 14:37:22</td>
+    <td>2022-06-25 14:37:36</td>
+    <td class="action">
+        <i class="bi bi-pencil"></i>
+        <i class="bi bi-eye"></i>
+        <i class="bi bi-trash"></i>
+        <i class="bi bi-flask"></i>
+    </td>
+</tr>
+
+<tr class="selected-row">
+    <td><input class="form-check-input" type="checkbox" checked></td>
+    <td>6</td>
+    <td>Clients</td>
+    <td>2022-06-25</td>
+    <td><span class="badge bg-success">special</span></td>
+    <td><i class="bi bi-star-fill star-green"></i></td>
+    <td>2022-06-25 14:37:28</td>
+    <td>2022-06-25 14:37:28</td>
+    <td class="action">
+        <i class="bi bi-pencil"></i>
+        <i class="bi bi-eye"></i>
+        <i class="bi bi-trash"></i>
+        <i class="bi bi-flask"></i>
+    </td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+<div class="table-footer">
+    <span>Showing 1 to 6 of 6 entries</span>
+    <div>
+        Show
+        <select class="form-select form-select-sm d-inline w-auto">
+            <option>20</option>
+        </select>
+        entries
+        <span class="page-box">
+            <span>«</span>
+            <span class="active">1</span>
+            <span>»</span>
+        </span>
+    </div>
+</div>
+
+</div>
+</div>
+
+</body>
+</html>
