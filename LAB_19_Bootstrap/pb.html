@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Split Login Page - Teaching Example</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        /* --- TEACHING NOTE: THE LEFT SIDE --- */
+        /* We use a linear gradient to make the blue look professional without needing images */
+        .left-side {
+            background: linear-gradient(135deg, #00c6ff, #0072ff);
+            color: white;
+        }
+
+        /* Form styling to match the clean look of the image */
+        .login-input {
+            background-color: #f8f9fa;
+            /* Light grey background for inputs */
+            border: none;
+            height: 50px;
+        }
+
+        /* The "Subscribe" button (Pill shape) */
+        .btn-subscribe {
+            background-color: #0072ff;
+            color: white;
+            border-radius: 50px;
+            /* Makes it pill-shaped */
+            padding: 12px;
+            font-weight: bold;
+            border: none;
+        }
+
+        .btn-subscribe:hover {
+            background-color: #005bb5;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container-fluid p-0">
+
+        <div class="row g-0 min-vh-100">
+
+            <div
+                class="col-md-6 left-side d-none d-md-flex flex-column align-items-center justify-content-center text-center p-5">
+
+                <h4 class="mb-4 text-white-50">Nice to see you again</h4>
+                <h1 class="display-4 fw-bold mb-4">WELCOME BACK</h1>
+                <p class="lead small text-white-50" style="max-width: 400px;">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua.
+                </p>
+
+            </div>
+
+            <div class="col-md-6 bg-white d-flex align-items-center justify-content-center p-5">
+
+                <div style="width: 100%; max-width: 400px;">
+                    <h3 class="fw-bold text-primary mb-2">Login Account</h3>
+                    <p class="text-muted small mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+                    <form>
+                        <div class="mb-3">
+                            <input type="email" class="form-control login-input" placeholder="Email ID">
+                        </div>
+
+                        <div class="mb-3">
+                            <input type="password" class="form-control login-input" placeholder="Password">
+                        </div>
+
+                        <div class="d-flex justify-content-between align-items-center mb-4 small">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="keepSignedIn">
+                                <label class="form-check-label text-muted" for="keepSignedIn">
+                                    Keep me signed in
+                                </label>
+                            </div>
+                            <a href="#" class="text-decoration-none fw-bold">Already a member?</a>
+                        </div>
+
+                        <button type="submit" class="btn btn-subscribe w-100 shadow">
+                            SUBSCRIBE
+                        </button>
+                    </form>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
