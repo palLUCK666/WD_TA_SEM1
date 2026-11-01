@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Table - Student Version</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        /* --- TEACHING NOTE: CUSTOM COLORS --- */
+        /* We use custom CSS variables for the specific Pink and Yellow colors in the image */
+        :root {
+            --brand-pink: #ff477e;
+            /* The main pink color */
+            --brand-yellow: #ffdf00;
+            /* The yellow button color */
+            --bg-grey: #f8f9fa;
+            /* Light grey background for normal cards */
+        }
+
+        body {
+            font-family: sans-serif;
+            padding: 50px 0;
+        }
+
+        /* Styling for the Normal Cards (Start, Medium, Expert) */
+        .pricing-card {
+            background-color: var(--bg-grey);
+            border: 1px solid #dee2e6;
+            border-radius: 0;
+            /* Square corners like the image */
+            transition: transform 0.3s;
+        }
+
+        /* Styling for the "Highlighted" Card (Basic) */
+        .pricing-card.featured {
+            background-color: var(--brand-pink);
+            color: white;
+            border: none;
+            transform: scale(1.05);
+            /* Make it slightly bigger to pop out */
+            box-shadow: 0 10px 20px rgba(255, 71, 126, 0.3);
+            z-index: 10;
+            /* Ensure it sits on top */
+        }
+
+        /* Pink Button (for normal cards) */
+        .btn-pink {
+            background-color: var(--brand-pink);
+            color: white;
+            border-radius: 0;
+            padding: 10px 30px;
+            font-weight: 500;
+            border: none;
+        }
+
+        .btn-pink:hover {
+            background-color: #e63e6d;
+            color: white;
+        }
+
+        /* Yellow Button (for the featured card) */
+        .btn-yellow {
+            background-color: var(--brand-yellow);
+            color: #333;
+            border-radius: 0;
+            padding: 10px 30px;
+            font-weight: 600;
+            border: none;
+        }
+
+        .btn-yellow:hover {
+            background-color: #e6c800;
+        }
+
+        /* Typography tweaks */
+        .price {
+            font-size: 2rem;
+            font-weight: 700;
+            margin: 15px 0;
+        }
+
+        .plan-name {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container text-center">
+
+        <h2 class="fw-bold mb-3">Pricing Table</h2>
+        <p class="text-muted mb-5 mx-auto" style="max-width: 600px;">
+            Sample text. Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc justo sagittis suscipit
+            ultrices.
+        </p>
+
+        <div class="row row-cols-1 row-cols-md-4 g-4 align-items-center">
+
+            <div class="col">
+                <div class="card pricing-card h-100 py-4">
+                    <div class="card-body">
+                        <h3 class="plan-name">Start</h3>
+                        <div class="price">Free</div>
+                        <ul class="list-unstyled mb-4">
+                            <li class="mb-2">1 User</li>
+                            <li class="mb-2">1 Project</li>
+                        </ul>
+                        <button class="btn btn-pink">Order Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card pricing-card featured h-100 py-5">
+                    <div class="card-body">
+                        <h3 class="plan-name">Basic</h3>
+                        <div class="price">$19.99</div>
+                        <ul class="list-unstyled mb-4">
+                            <li class="mb-2">5 Users</li>
+                            <li class="mb-2">5 Projects</li>
+                        </ul>
+                        <button class="btn btn-yellow">Order Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card pricing-card h-100 py-4">
+                    <div class="card-body">
+                        <h3 class="plan-name">Medium</h3>
+                        <div class="price">$49.99</div>
+                        <ul class="list-unstyled mb-4">
+                            <li class="mb-2">100 Users</li>
+                            <li class="mb-2">100 Projects</li>
+                        </ul>
+                        <button class="btn btn-pink">Order Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card pricing-card h-100 py-4">
+                    <div class="card-body">
+                        <h3 class="plan-name">Expert</h3>
+                        <div class="price">$199.99</div>
+                        <ul class="list-unstyled mb-4">
+                            <li class="mb-2">Unlimited Users</li>
+                            <li class="mb-2">Unlimited Projects</li>
+                        </ul>
+                        <button class="btn btn-pink">Order Now</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
