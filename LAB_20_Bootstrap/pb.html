@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 23 - A</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        .top-bar {
+            background: #222;
+            color: white;
+            padding: 8px 0;
+            font-size: 14px;
+        }
+
+        .main-menu {
+            background: #333;
+        }
+
+        .hero-section {
+            background: linear-gradient(#0d8fd6, #0575b2);
+            padding: 60px 0;
+            color: white;
+        }
+
+        .recent-projects,
+        .latest-news {
+            background: #f1f1f1;
+            padding: 50px 0;
+        }
+
+        .clients {
+            background: #0d8fd6;
+            padding: 40px 0;
+            color: white;
+        }
+
+        .footer {
+            background: #222;
+            color: #aaa;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .cap-icon img {
+            width: 50px;
+            margin-bottom: 15px;
+        }
+
+        .project-img {
+            border-radius: 12px;
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .news-box p {
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="top-bar text-center">
+        Some top bar links | Support | Help | Contact
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark main-menu">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">iBuild</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-section text-center">
+        <div class="container">
+            <h4 class="mb-5">OUR CAPABILITIES</h4>
+
+            <div class="row text-center">
+                <div class="col-md-3">
+                    <div class="cap-icon">
+                        <img src="https://cdn-icons-png.flaticon.com/512/1995/1995522.png" alt="">
+                    </div>
+                    <h5>Project Management</h5>
+                    <p>We can help you manage all your project needs.</p>
+                    <button class="btn btn-light btn-sm">More</button>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="cap-icon">
+                        <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" alt="">
+                    </div>
+                    <h5>Innovation & Diversity</h5>
+                    <p>Latest technologies and creative solutions.</p>
+                    <button class="btn btn-light btn-sm">More</button>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="cap-icon">
+                        <img src="https://cdn-icons-png.flaticon.com/512/1828/1828671.png" alt="">
+                    </div>
+                    <h5>Professional Approach</h5>
+                    <p>A disciplined and experienced workforce.</p>
+                    <button class="btn btn-light btn-sm">More</button>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="cap-icon">
+                        <img src="https://cdn-icons-png.flaticon.com/512/456/456212.png" alt="">
+                    </div>
+                    <h5>Sustainable Future</h5>
+                    <p>We focus on environment-friendly solutions.</p>
+                    <button class="btn btn-light btn-sm">More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="recent-projects text-center">
+        <h4 class="mb-5">RECENT PROJECTS</h4>
+        <div class="container">
+
+            <div class="row g-4">
+                <div class="col-md-3">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxS1Im5rrnLFCpgP-TowfRPQFtD_vsk2IzoA&s"
+                        class="project-img">
+                    <h6 class="mt-2">Coastal Protection</h6>
+                </div>
+
+                <div class="col-md-3">
+                    <img src="https://renewcosolar.com.au/wp-content/uploads/2023/11/windmill.jpg" class="project-img">
+                    <h6 class="mt-2">Renewable Energy</h6>
+                </div>
+
+                <div class="col-md-3">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVn5NsIm1RaEGrNFlWQCQR2UnV5XdqlXfbBw&s"
+                        class="project-img">
+                    <h6 class="mt-2">Quarrying</h6>
+                </div>
+
+                <div class="col-md-3">
+                    <img src="https://static.vecteezy.com/system/resources/thumbnails/050/080/174/small/dramatic-scene-of-a-burning-building-at-night-with-fierce-flames-engulfing-the-structure-in-an-urban-disaster-scenario-photo.jpg"
+                        class="project-img">
+                    <h6 class="mt-2">Land Remediation</h6>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="latest-news">
+        <div class="container text-center">
+            <h4 class="mb-5">LATEST NEWS</h4>
+
+            <div class="row text-start">
+                <div class="col-md-4 news-box">
+                    <h6>10 April 2023</h6>
+                    <a href="#">Company plans new infrastructure upgrade</a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, omnis.</p>
+                </div>
+
+                <div class="col-md-4 news-box">
+                    <h6>10 April 2023</h6>
+                    <a href="#">Renewable energy project starts soon</a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, vitae.</p>
+                </div>
+
+                <div class="col-md-4 news-box">
+                    <h6>10 April 2023</h6>
+                    <a href="#">New industrial contract signed</a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, quasi.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="clients text-center">
+        <h4 class="mb-4">OUR CLIENTS</h4>
+        <div class="container">
+            <div class="row justify-content-center g-4">
+                <div class="col-3 col-md-2"><img src="https://dummyimage.com/140x50/ffffff/000.png&text=U42"
+                        class="img-fluid"></div>
+                <div class="col-3 col-md-2"><img src="https://dummyimage.com/140x50/ffffff/000.png&text=ellipsis"
+                        class="img-fluid"></div>
+                <div class="col-3 col-md-2"><img src="https://dummyimage.com/140x50/ffffff/000.png&text=Dominic"
+                        class="img-fluid"></div>
+                <div class="col-3 col-md-2"><img src="https://dummyimage.com/140x50/ffffff/000.png&text=Sayodia"
+                        class="img-fluid"></div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>© 2024 iBuild — All Rights Reserved</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
