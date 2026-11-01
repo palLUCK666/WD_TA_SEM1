@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Landing Page</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+<style>
+html, body {
+    margin: 0;
+    height: 100%;
+    font-family: "Segoe UI", sans-serif;
+    background: #f2f2f2;
+}
+
+/* MAIN CARD */
+.wrapper {
+    max-width: 1200px;
+    margin: 40px auto;
+    background: #ffffff;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+}
+
+/* NAVBAR */
+.navbar {
+    padding: 15px 40px;
+    background: #ffffff;
+}
+
+.logo-dot {
+    width: 18px;
+    height: 18px;
+    background: #1f5d7a;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 8px;
+}
+
+/* HERO */
+.hero {
+    display: flex;
+    height: 420px;
+}
+
+/* LEFT BLUE PART (INCREASED) */
+.hero-left {
+    width: 78%;          
+    background: #1f5d7a;
+    color: #ffffff;
+    padding: 80px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* TEXT */
+.hero-left h1 {
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.hero-left p {
+    margin: 20px 0;
+    font-size: 15px;
+    max-width: 360px;
+}
+
+.hero-left .btn {
+    background: #5dd6c4;
+    color: #ffffff;
+    padding: 12px 28px;
+    border-radius: 25px;
+    width: fit-content;
+    font-weight: 600;
+}
+
+
+.hero-right {
+    width: 30%;           
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0;
+}
+
+/* IMAGE */
+.hero-img {
+    height: 420px;
+    object-fit: contain;
+}
+
+/* SERVICES */
+.services {
+    padding: 70px 60px;
+    text-align: center;
+}
+
+.service-icon {
+    width: 70px;
+    height: 70px;
+    background: #5dd6c4;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 28px;
+    margin: 0 auto 20px;
+}
+
+/* TESTIMONIAL */
+.testimonial {
+    padding: 60px;
+    text-align: center;
+}
+
+.testimonial-box {
+    max-width: 600px;
+    margin: auto;
+    background: #ffffff;
+    padding: 35px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.testimonial-box i {
+    color: #5dd6c4;
+    font-size: 28px;
+}
+
+/* FOOTER BARS */
+.footer-bars {
+    padding: 40px 60px 60px;
+}
+
+.footer-bars div {
+    height: 8px;
+    background: #e0e0e0;
+    border-radius: 10px;
+    margin-bottom: 12px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        height: auto;
+    }
+    .hero-left, .hero-right {
+        width: 100%;
+        text-align: center;
+    }
+    .hero-img {
+        height: 300px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="wrapper">
+
+    <!-- NAVBAR -->
+    <nav class="navbar d-flex justify-content-between">
+        <div class="fw-bold">
+            <span class="logo-dot"></span> Home
+        </div>
+        <div>
+            <a class="me-4 text-decoration-none text-dark" href="#">Home</a>
+            <a class="me-4 text-decoration-none text-dark" href="#">About</a>
+            <a class="me-4 text-decoration-none text-dark" href="#">Services</a>
+            <a class="text-decoration-none text-dark" href="#">Contact</a>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-left">
+            <h1>Grow Your<br>Business<br>with Us</h1>
+            <p>
+                We provide the best solutions to help you grow
+                your business effectively.
+            </p>
+            <a href="#" class="btn">Get Started</a>
+        </div>
+
+        <div class="hero-right">
+            <img src="illustration.png" alt="Illustration" class="hero-img">
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="services">
+        <h2 class="mb-5">Our Services</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="service-icon"><i class="fas fa-lightbulb"></i></div>
+                <h5>Feature One</h5>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="col-md-4">
+                <div class="service-icon"><i class="fas fa-cog"></i></div>
+                <h5>Feature Two</h5>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="col-md-4">
+                <div class="service-icon"><i class="fas fa-chart-line"></i></div>
+                <h5>Feature Three</h5>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIAL -->
+    <section class="testimonial">
+        <h2 class="mb-4">What Our Clients Say</h2>
+        <div class="testimonial-box">
+            <i class="fas fa-quote-left"></i>
+            <p class="mt-3">
+                This company has helped our business achieve great results.
+                Highly recommended!
+            </p>
+            <strong>John Doe</strong>
+        </div>
+    </section>
+
+    <!-- FOOTER BARS -->
+    <div class="footer-bars">
+        <div></div>
+        <div style="width:80%"></div>
+        <div style="width:60%"></div>
+    </div>
+
+</div>
+
+</body>
+</html>
