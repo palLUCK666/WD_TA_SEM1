@@ -1,0 +1,21 @@
+Tailwind classes Used
+
+| Class                                                          | Purpose                      |
+| -------------------------------------------------------------- | ---------------------------- |
+| `bg-gradient-to-r`                                             | Left-to-right gradient       |
+| `from-*`, `via-*`, `to-*`                                      | Gradient colors              |
+| `bg-cover`                                                     | Cover background image       |
+| `bg-center`                                                    | Center background            |
+| `backdrop-blur-lg`                                             | Glassmorphism blur           |
+| `bg-white/20`                                                  | Transparent white background |
+| `border`, `border-dashed`, `border-dotted`                     | Border styles                |
+| `shadow-sm`, `shadow-lg`, `shadow-2xl`                         | Shadow depths                |
+| `bg-blend-darken`                                              | Background blend mode        |
+| `blur-sm`, `grayscale`, `brightness-50`                        | Image filters                |
+| `hover:blur-none`, `hover:grayscale-0`, `hover:brightness-100` | Remove filters on hover      |
+| `animate-pulse`                                                | Pulsing animation            |
+| `divide-x`                                                     | Vertical separator lines     |
+| `hr`                                                           | Horizontal separator         |
+| `ring-2`, `hover:ring-8`                                       | Ring effect                  |
+| `hover:-translate-y-3`                                         | Lift card upward             |
+| `transition`, `duration-300`                                   | Smooth hover animations      |
